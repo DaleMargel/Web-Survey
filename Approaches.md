@@ -38,13 +38,13 @@ These are Linux + Apache + MySQL + PHP (or Perl) based servers. These are consid
 
 The main feature of this are that a round trip to the server must be made for each web page update. Typically there is no need for javascript on the browser.
 
-This approach works best for ... legacy sites that wish to remain legacy. That is, although I have worked on many of these types of sites, I never liked this approach. Better options now exist.
+This approach works best for ... legacy sites that wish to remain legacy, or perhaps cheaper web hosting? That is, although I have worked on many of these types of sites, I never liked this approach. Better options now exist: [SSR](https://blog.logrocket.com/why-you-should-render-react-on-the-server-side-a50507163b79/) for instance.
 
 ---
 ## 💗Web Application
 This is a web page that can be served by any of the means mentioned above. Once in play, the web page responds to the user actions directly and updates itself as needed. It can connect to a back end server to request data and dynamically update as the data changes.
 
-Unlike other types of web pages, these will depend heavily on javascript executing on the browser. This makes them vulnerable to old browsers (i.e., IE) that do not support modern javascript. Also beware that code running on the browser is not secure.  
+Unlike other types of web pages, these will depend heavily on javascript executing on the browser. This makes them vulnerable to browsers that do not support modern javascript (i.e., IE, Safari). Also beware that code running on the browser is not secure.  
 
 This approach works best for modern-style applications that will play nicely with Desktop and Mobile browsers.
 

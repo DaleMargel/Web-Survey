@@ -1,16 +1,16 @@
 # Anatomy of a Web Application
-A full web development environment and application have many moving parts. To some degree, all of these items should be decided - even if the choice is not to support it.
+A full web development environment and application have many moving parts. To some degree, all of these items should be decided - even if the choice is to ignore it.
 
 ## Platform
 
 | Aspect | Description |
 | ------ | ----------- |
-| IDE | The Integrated Development Environment used to write code and orchestrate builds.  |
-| Repository | A service to store and version code. |
+| IDE | The Integrated Development Environment used to write code  |
+| Repository | A service to store and version code |
 | Language | What version of javascript to use |
 | Templating | Render web page with data |
 | Design | Styling of controls |
-| Catalog | Library and showcase of components |
+| Catalog | Library and showcase for controls |
 | Structure | Handling of complex control hierarchies |
 
 ## Quality
@@ -19,13 +19,15 @@ A full web development environment and application have many moving parts. To so
 | ------ | ----------- |
 | Lint | Check code for structural bugs |
 | Unit Test | Test code functions |
-| Integration test | Test connections between components |
+| Integration test | Test interaction between components |
 | Code Coverage | Make sure that everything is tested |
 | End-to-End test | Test whole application |
 | SPA Compliance | Test that application supports SPA |
 | Code Size | Track code size during development |
-| Performance | Look for slow parts of application |
+| Profile | Look for slow parts of application |
 | Legacy Support | What do we support and how? |
+| SEO | Search Engine Optimizations lets Google properly index the site |
+| SSR | Server Side Rendering renders the first page on the server for extra startup speed |
 
 ## Services
 
@@ -40,10 +42,10 @@ A full web development environment and application have many moving parts. To so
 | Secure Socket | Support https |
 | CORS | Allow access to other domains |
 | Logger | Record errors for future analysis |
-| Log Browser | Searches, displays and correlates logs |
+| Log Browser | Analyse logs |
 | Load Balancer | Distributes requests among servers |
 | Rate Limiting | Prevents server from being overwhelmed by requests |
-| Analytics | Determine who is using your site and how? |
+| Analytics | Determine who is using the site and how? |
 
 ## Deployment
 
