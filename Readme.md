@@ -23,7 +23,7 @@ The following symbols are used in the tables:
 
 ## Table of contents
 1. [Wish List](./WishList.md)
-2. [The Choices](./Choices.md)
-3. [Approaches](./Approaches)
+2. [Choices](./Choices.md)
+3. [Approaches](./Approaches.md)
 
 ## [Next> Wish List](./WishList.md)
