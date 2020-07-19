@@ -12,7 +12,7 @@ Your changes can be saved from the browser to a local file. Any tags with `conte
 
 This approach is used by [TiddlyWiki](https://tiddlywiki.com/) (also [here](https://github.com/Jermolene/TiddlyWiki5)). It does not need a server, but can make use of one if served from it.
 
-This is of limited use bur can be used when you need a simple / personal application without a web server. Beware that the changes must be saved and that this can feel a bit awkward on most browsers.
+This is of limited use but can be used when you need a simple / personal application without a web server. Beware that the changes must be saved and that this can feel a bit awkward on most browsers.
 
 ---
 ## Static
@@ -47,3 +47,5 @@ This is a web page that can be served by any of the means mentioned above. Once 
 Unlike other types of web pages, these will depend heavily on javascript executing on the browser. This makes them vulnerable to old browsers (i.e., IE) that do not support modern javascript. Also beware that code running on the browser is not secure.  
 
 This approach works best for modern-style applications that will play nicely with Desktop and Mobile browsers.
+
+## [Next> Anatomy of a Web Site](./Anatomy.md)

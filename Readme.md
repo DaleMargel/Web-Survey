@@ -25,5 +25,6 @@ The following symbols are used in the tables:
 1. [Wish List](./WishList.md)
 2. [Choices](./Choices.md)
 3. [Approaches](./Approaches.md)
+4. [Anatomy of a Website](Anatomy.md)
 
 ## [Next> Wish List](./WishList.md)
