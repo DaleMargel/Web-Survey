@@ -26,6 +26,6 @@ The following symbols are used in the tables:
 2. [Choices](Choices.md)
 3. [Approaches](Approaches.md)
 4. [Anatomy of a Website](Anatomy.md)
-	1. [Religion](Religion.md)
+	1. [Code Religion](Religion.md)
 
 ## [Next> Wish List](WishList.md)

@@ -69,4 +69,4 @@ A full web development environment and application have many moving parts. To so
 | Orchestration | Coordinate containers |
 | Server | The server that runs it all |
 
-## [Next> Religion](Religion.md)
+## [Next> Code Religion](Religion.md)
