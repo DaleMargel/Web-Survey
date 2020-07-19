@@ -6,10 +6,10 @@ A full web development environment and application have many moving parts. To so
 
 | Aspect | Description |
 | ------ | ----------- |
-| [Setting](Religion#Setting) | Where you do the work |
-| [OS](Religion#OS) | Development operating system |
-| [Code Standards](Religion#Code%20Standards) | Placement of brackets, capitalization, etc. |
-| [Tabs or Spaces](Religion#Tabs%20or%20Spaces) | Use of Tabs or Spaces |
+| [Setting](Religion.md#Setting) | Where you do the work |
+| [OS](Religion.md#OS) | Development operating system |
+| [Code Standards](Religion.md#Code%20Standards) | Placement of brackets, capitalization, etc. |
+| [Tabs or Spaces](Religion.md#Tabs%20or%20Spaces) | Use of Tabs or Spaces |
 
 
 ## Platform
@@ -69,4 +69,4 @@ A full web development environment and application have many moving parts. To so
 | Orchestration | Coordinate containers |
 | Server | The server that runs it all |
 
-## [Next> Religion](Religion)
+## [Next> Religion](Religion.md)

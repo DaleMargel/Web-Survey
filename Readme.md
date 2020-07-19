@@ -22,10 +22,10 @@ The following symbols are used in the tables:
 | ▶ | Standard technology, should adopt even if I do not like it. |
 
 ## Table of contents
-1. [Wish List](WishList)
-2. [Choices](Choices)
-3. [Approaches](Approaches)
-4. [Anatomy of a Website](Anatomy)
-	1. [Religion](Religion)
+1. [Wish List](WishList.md)
+2. [Choices](Choices.md)
+3. [Approaches](Approaches.md)
+4. [Anatomy of a Website](Anatomy.md)
+	1. [Religion](Religion.md)
 
-## [Next> Wish List](WishList)
+## [Next> Wish List](WishList.md)

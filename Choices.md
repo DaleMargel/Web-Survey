@@ -46,4 +46,4 @@ I use the term "cross-platform" to mean that the same code can be rendered nativ
 | [Rust](https://www.rust-lang.org/) | <p>A C++ replacement that compiles nicely to most native platforms and WASM. It is intended as a system language for large code bases.</p><p>I included this because it seems to be the preferred way to create high quality WASM</p>  |
 | [Go](https://golang.org/) | <p>A C++ replacement that runs on most platforms, but most especially servers.<p>I included this because there is a large ecosystem of server-based technologies written in this language</p> |
 
-## [Next> Approaches](Approaches)
+## [Next> Approaches](Approaches.md)

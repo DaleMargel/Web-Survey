@@ -54,4 +54,4 @@ Unlike other types of web pages, these will depend heavily on javascript executi
 
 This approach works best for modern-style applications that will play nicely with Desktop and Mobile browsers.
 
-## [Next> Anatomy of a Web Site](Anatomy)
+## [Next> Anatomy of a Web Site](Anatomy.md)
