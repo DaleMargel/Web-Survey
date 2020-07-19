@@ -8,7 +8,7 @@ The basic approach of the tool is important.
 | -------- | ----------- |
 | Native | These are tools that target one platform. The application must be re-written mostly from scratch for each platform. This does not align with our goals, so we shall skip it henceforth. |
 | Multi Target | These are languages that can target a large number of platforms. Typically these do not support web, or they don't support it very well. |
-| Web Hybrid | These are web pages with a web browser and web server bolted on to them. They look good and run anywhere, but they are very big. See: [Capacitor](https://capacitorjs.com/), [Ionic](https://ionicframework.com/), [Electron](https://www.electronjs.org/), [NWJS](https://nwjs.io/), [PhoneGap](https://phonegap.com/), [Cordova](https://cordova.apache.org/) |
+| Web Hybrid | These are web pages with a web browser and web server bolted on to them. They look good and run anywhere, but they are very big. See: [Capacitor](https://capacitorjs.com/), [Ionic](https://ionicframework.com/), [Electron](https://www.electronjs.org/), [NWJS](https://nwjs.io/), [PhoneGap](https://phonegap.com/), [Cordova](https://cordova.apache.org/). Extra points to NWJS for being really simple to use. |
 | 💗[PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) | A Progressive Web Application (PWA) is a design pattern that allows web pages to be run as regular applications using the local web browser as a run time agent. These tend to be small and run on any platform that has an evergreen web browser (which is most). |
 
 ## And the winner is...
@@ -46,4 +46,4 @@ I use the term "cross-platform" to mean that the same code can be rendered nativ
 | [Rust](https://www.rust-lang.org/) | <p>A C++ replacement that compiles nicely to most native platforms and WASM. It is intended as a system language for large code bases.</p><p>I included this because it seems to be the preferred way to create high quality WASM</p>  |
 | [Go](https://golang.org/) | <p>A C++ replacement that runs on most platforms, but most especially servers.<p>I included this because there is a large ecosystem of server-based technologies written in this language</p> |
 
-## [Next> Approaches](./Approaches.md)
+## [Next> Approaches](Approaches)

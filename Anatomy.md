@@ -1,6 +1,17 @@
 # Anatomy of a Web Application
 A full web development environment and application have many moving parts. To some degree, all of these items should be decided - even if the choice is to ignore it.
 
+
+## [Religion](Religion)
+
+| Aspect | Description |
+| ------ | ----------- |
+| [Setting](Religion#Setting) | Where you do the work |
+| [OS](Religion#OS) | Development operating system |
+| [Code Standards](Religion#Code%20Standards) | Placement of brackets, capitalization, etc. |
+| [Tabs or Spaces](Religion#Tabs%20or%20Spaces) | Use of Tabs or Spaces |
+
+
 ## Platform
 
 | Aspect | Description |
@@ -12,6 +23,7 @@ A full web development environment and application have many moving parts. To so
 | Design | Styling of controls |
 | Catalog | Library and showcase for controls |
 | Structure | Handling of complex control hierarchies |
+
 
 ## Quality
 
@@ -28,6 +40,7 @@ A full web development environment and application have many moving parts. To so
 | Legacy Support | What do we support and how? |
 | SEO | Search Engine Optimizations lets Google properly index the site |
 | SSR | Server Side Rendering renders the first page on the server for extra startup speed |
+
 
 ## Services
 
@@ -47,6 +60,7 @@ A full web development environment and application have many moving parts. To so
 | Rate Limiting | Prevents server from being overwhelmed by requests |
 | Analytics | Determine who is using the site and how? |
 
+
 ## Deployment
 
 | Aspect | Description |
@@ -55,3 +69,4 @@ A full web development environment and application have many moving parts. To so
 | Orchestration | Coordinate containers |
 | Server | The server that runs it all |
 
+## [Next> Religion](Religion)

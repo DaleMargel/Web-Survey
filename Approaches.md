@@ -27,7 +27,7 @@ This approach works best for sites that change rarely or not at all (although th
 A list of tools can be found [here](https://www.staticgen.com/). This approach works best for sites that change from time to time - like a blog.
 
 ---
-## Lamp Stack
+## LAMP Stack
 These are Linux + Apache + MySQL + PHP (or Perl) based servers. These are considered "old style" web sites that work as follows:
 1. A request is made to the web site server
    - REST query may be in the request URL. 
@@ -41,6 +41,12 @@ The main feature of this are that a round trip to the server must be made for ea
 This approach works best for ... legacy sites that wish to remain legacy, or perhaps cheaper web hosting? That is, although I have worked on many of these types of sites, I never liked this approach. Better options now exist: [SSR](https://blog.logrocket.com/why-you-should-render-react-on-the-server-side-a50507163b79/) for instance.
 
 ---
+## Mean Stack (and variants)
+Mean means MongoDB + Express + Angular + Node.js. There are many variations on this. Most of these have cute acronyms. The main feature of these stacks is that they do not require the page generation to be done on the server.
+
+IMHO I consider the MEAN stack obsolete and limiting. There are a huge number of ways to construct a server; MEAN is just one of them. Much of this document explores other (and often better) possibilities.
+
+---
 ## 💗Web Application
 This is a web page that can be served by any of the means mentioned above. Once in play, the web page responds to the user actions directly and updates itself as needed. It can connect to a back end server to request data and dynamically update as the data changes.
 
@@ -48,4 +54,4 @@ Unlike other types of web pages, these will depend heavily on javascript executi
 
 This approach works best for modern-style applications that will play nicely with Desktop and Mobile browsers.
 
-## [Next> Anatomy of a Web Site](./Anatomy.md)
+## [Next> Anatomy of a Web Site](Anatomy)
