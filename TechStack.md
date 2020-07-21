@@ -30,9 +30,18 @@ This approach works best for simple web sites that do not need much security. Ma
 
 Security is enforced by the author needing to log into the host system to make changes. The generated site is public and cannot be changed by anybody reading the site.
 
-A list of tools can be found [here](https://www.staticgen.com/).
+A list of tools can be found [here](https://www.staticgen.com/). Some are shown below. Descriptions taken from web sites. Stars updated on 2020.07.20.
 
-This approach works best for sites where a single author changes simple content from time to time. This could be a blog. portfolio or catalog.
+| Product | Stars | Description |
+| ------- | -----:| ----------- |
+| [Gatsby](https://github.com/gatsbyjs/gatsby) | ★45.9k | Host at Scale for Pennies. Gatsby sites don’t require servers so you can host your entire site on a CDN for a fraction of the cost of a server-rendered site. Many Gatsby sites can be hosted entirely free on services like GitHub Pages and Netlify. Load Data From anywhere. Gatsby pulls in data from any data source, whether it’s Markdown files, a headless CMS like Contentful or WordPress, or a REST or GraphQL API. Use source plugins to load your data, then develop using Gatsby’s uniform GraphQL interface. |
+| [Hugo](https://github.com/gohugoio/hugo) | ★45.6k | Hugo is a static HTML and CSS website generator written in Go. It is optimized for speed, ease of use, and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. Hugo relies on Markdown files with front matter for metadata, and you can run Hugo from any directory. This works well for shared hosts and other systems where you don’t have a privileged account. |
+| [Jeckyl](https://github.com/jekyll/jekyll) | ★40.9k | Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website. Jekyll is the engine behind GitHub Pages, which you can use to host sites right from your GitHub repositories. (By Github) |
+| [React Static](https://github.com/react-static/react-static/tree/master/) | ★8.8k | A progressive static site is a website where every statically exported HTML page is an entry point to a fully-featured automatically-code-split React application. Just like a normal static site, static progressive websites are capable of loading initial landing pages very quickly, but then extend the user experience by transforming invisibly into a single-page React application. |
+| [RedwoodJS](https://github.com/redwoodjs/redwood) | ★4.2k alpha | Redwood is an opinionated, full-stack, serverless web application framework that will allow you to build and deploy JAMstack applications with ease. Imagine a React frontend, statically delivered by CDN, that talks via GraphQL to your backend running on AWS Lambdas around the world, all deployable with just a git push—that's Redwood. (By Github) |
+| [Unpoly](https://github.com/unpoly/unpoly) | ★613 | Not really a JAMStack. Unobtrusive JavaScript framework for server-side applications. It makes standard round-trip web sites look like SSR PWA. |
+
+This approach works best for sites where a single author changes simple content from time to time. This could be a blog, portfolio or catalog.
 
 ---
 ## Classic Server
@@ -65,5 +74,7 @@ A modern server can serve web pages or data. The most popular one is MEAN: Mongo
 
 While a PWA can be served by any means, it can request a lot of data, dynamic updates and make calls to services. This works best with a modern server.
 
+# Holotypes
+In the article [Application Holotypes: A Guide to Architecture Decisions](https://jasonformat.com/application-holotypes/), Jason Miller describes the main categories of web applications and their overall architecture. This can inform our choice of tools, or at least get us thinking about the type of application we are writing. Spoiler: they are all PWA.
 
 [Next> Anatomy of a Web Application](Anatomy.md)
