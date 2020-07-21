@@ -11,9 +11,9 @@ The technology and structure of the application.
 | [Repository](PlatformRepository.md) | A service to store and version code |
 | [Language](PlatformLanguage.md) | What version of javascript to use |
 | [Rendering Engine](PlatformRendering.md) | Render web page with data |
-| [Visual Design](PlatformVisualDesign#design) | Styling of controls |
-| [Widget Catalog](PlatformVisualDesign#catalog) | Library and showcase for controls |
-| [Widget Structure](PlatformVisualDesign#structure) | Handling of complex control hierarchies |
+| [Visual Design](PlatformVisualDesign.md#design) | Styling of controls |
+| [Widget Catalog](PlatformVisualDesign.md#catalog) | Library and showcase for controls |
+| [Widget Structure](PlatformVisualDesign.md#structure) | Handling of complex control hierarchies |
 
 
 ## Quality
