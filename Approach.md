@@ -1,8 +1,5 @@
-# Choices
+# Approach
 There are a lot of interesting technologies out there. While this is not a comprehensive list, it covers the broader strokes.
-
-## Achitecture
-The basic approach of the tool is important.
 
 | Approach | Description |
 | -------- | ----------- |
@@ -12,15 +9,26 @@ The basic approach of the tool is important.
 | 💗[PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) | A Progressive Web Application (PWA) is a design pattern that allows web pages to be run as regular applications using the local web browser as a run time agent. These tend to be small and run on any platform that has an evergreen web browser (which is most). |
 
 ## And the winner is...
-For our needs, Progressive Web Applications (PWA) are the best approach. The advantages:
+Progressive Web Applications (PWA) are the best approach for our needs. A PWA is just a type of web page. It can be served by any web server. Once in play, it responds to the user actions directly and updates itself as needed. It can connect to a back end server to request data and dynamically update as the data changes. This approach works best for modern-style applications that will play nicely with Desktop and Mobile browsers.
 
-- They look and feel like an installed application.
+Unlike classic web, these depend heavily on javascript executing on the browser. This makes them vulnerable to browsers that do not support modern javascript (i.e., IE, Safari). Also beware that code running on the browser is not secure.  
+
+Advantages:
+
+- Look and feel similar to a native application.
 - Write once, run anywhere.
 - Easy to locate (web search) and install (click of a button).
 - No App Stores to deal with.
 - Updates are automatically applied.
 - No need for a connected server.
 - Small code size compared to other approaches.
+
+Disadvantages:
+
+- Heavy reliance on client using modern javascript.
+- Depends on client computing capability.
+- Not as fast or capable as native code.
+- Code on client is not secure.
 
 ## Special Mention / Frameworks
 There are some frameworks that deserve mention. The issue with most of these is that they do not support all platforms (Desktop, Mobile, Web) or that the resulting code can be very large.
@@ -42,8 +50,8 @@ I use the term "cross-platform" to mean that the same code can be rendered nativ
 | ------- | ----------- |
 | [Haxe](https://haxe.org/) | <p>This started out as a 'flash' alternative, but has evolved well beyond this. It can compile to a range of languages: JavaScript, C++, C#, Java, JVM, Python, Lua, PHP, Flash, Neko(VM) and HashLink(VM). It can target just about anything. It supports Web through javascript, but not through a cross-platform API.</p><p>There is an excellent haxe library [OpenFL](https://www.openfl.org/) that is cross-platform, but it is intended for games. Another library, [Cocktail](https://github.com/silexlabs/Cocktail) implements relevant html/css parts of a web browser. This is truly a cross-platform library, but suffers from incomplete support of modern HTML5.</p> |
 | [Xamarin](https://github.com/xamarin) | <p>Targets Desktop / Mobile / WASM using C#. No Web Support.</p> |
-| [Kotlin](https://kotlinlang.org/) | <p>Targets Desktop / Mobile / Web (via javascript) / WASM.</p> |
-| [Rust](https://www.rust-lang.org/) | <p>A C++ replacement that compiles nicely to most native platforms and WASM. It is intended as a system language for large code bases.</p><p>I included this because it seems to be the preferred way to create high quality WASM</p>  |
-| [Go](https://golang.org/) | <p>A C++ replacement that runs on most platforms, but most especially servers.<p>I included this because there is a large ecosystem of server-based technologies written in this language</p> |
+| [Kotlin](https://kotlinlang.org/) | <p>Targets Desktop / Mobile / Web (via javascript) / WASM. I need a closer look.</p> |
+| [Rust](https://www.rust-lang.org/) | <p>A C++ replacement that compiles nicely to most native platforms and WASM. It is intended as a system language for large code bases. I included this because it seems to be the preferred way to create high quality WASM</p>  |
+| [Go](https://golang.org/) | <p>A C++ replacement that runs on most platforms, but most especially servers. I included this because there is a large ecosystem of server-based technologies written in this language</p> |
 
 ## [Next> Approaches](Approaches.md)

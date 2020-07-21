@@ -1,0 +1,1 @@
+[SSR](https://blog.logrocket.com/why-you-should-render-react-on-the-server-side-a50507163b79/) for instance.

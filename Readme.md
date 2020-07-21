@@ -1,5 +1,5 @@
 # The Search for the Holy Grail
-An opinionated overview of the many (and best) ways to build an application.
+An opinionated overview of the many (and in my view, the best) ways to build an application.
 
 ## Why?
 If you were to set up an ideal application development platform which one would you choose?
@@ -23,9 +23,46 @@ The following symbols are used in the tables:
 
 ## Table of contents
 1. [Wish List](WishList.md)
-2. [Choices](Choices.md)
-3. [Approaches](Approaches.md)
-4. [Anatomy of a Website](Anatomy.md)
-	1. [Code Religion](Religion.md)
+2. [Approach](Approach.md)
+3. [Technology Stack](TechStack.md)
+4. [Anatomy of a Web Application](Anatomy.md)
+5. Client Platform
+    1. [Religious War Issues](PlatformReligion.md)
+	2. [Integrated Development Environment](PlatformIDE.md)
+	3. [Language Version](PlatformLanguage.md)
+	4. [Rendering Engine](PlatformRendering.md)
+	5. [Widget Design](PlatformDesign.md#design) 
+	6. [Widget Catalog](PlatformDesign.md#catalog) 
+	7. [Widget Structure](PlatformDesign.md#structure)
+6. Quality
+	1. Code Linting
+	2. Unit Tests
+	3. Integration Tests
+	5. End-to-End Tests
+	4. Code Coverage
+	6. SPA Compliance
+	7. Code Size
+	8. Profiling
+	9. Legacy Support
+	10. Server Side Rendering
+7. Server
+	1. Server Interface
+	2. Database
+	3. Reverse Proxy
+	4. Authentication
+	5. External Login
+	6. Authorization
+	7. Secure Socket
+	8. CORS Support
+	9. Logging
+	10. Log Browser
+	11. Load Balancer
+	12. Rate Limiting
+	13. Analytics
+	14. SEO
+8. Deployment
+	1. Containers
+	2. Container Orchestration
+	3. Host Server
 
 ## [Next> Wish List](WishList.md)
