@@ -1,4 +1,4 @@
-# Visual Design
+# Platform Visual Design
 
 ## Design
 Styling and structure of controls
@@ -8,3 +8,4 @@ Library and showcase for controls
 
 ## Structure
 Handling of complex control hierarchies
+

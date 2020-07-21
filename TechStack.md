@@ -1,5 +1,5 @@
 # Technology Stack
-At this point, we have selected PWA as our preferred approach. Depending on scale, there are a few stacks that can be used. I will list what I know in increasing capability.
+At this point, we have selected PWA as our preferred approach. Depending on scale, there are a few stacks that can be used. I will list what I know in increasing capability. The names used here are my own.
 
 ---
 ## Minimal
@@ -20,11 +20,9 @@ This is of limited use but can be used when you need a simple / personal applica
 ## Static Server
 This is a simple web server that only serves html files and other resources. An example of this is [Servor](https://github.com/lukejacksonn/servor) which does nothing else but serves files to a browser.
 
-The served page might be very complex. It might connect to back-end services, use external libraries and have complex processing happening on the client. All the while, the server has nothing to do but wait for file requests.
+The served page might be very complex. It might connect to back-end services, use external libraries and have complex processing happening on the browser. All the while, the server has nothing to do but wait for file requests. While the web page is free to use back-end services, code on the browser is not secure. This can limit what is possible with a static server.
 
-While the client is free to use back-end services, this code is not secure. The client must interact with hidden code on a more complex server to be secure.
-
-This approach works best for simple web sites that do not need much security. Many web development tools have one of these available to view web resources.
+This approach works best for simple web sites that do not need much security. Many web development tools have one of these available to view the web page as it is being written.
 
 ---
 ## JamStack
@@ -68,4 +66,4 @@ A modern server can serve web pages or data. The most popular one is MEAN: Mongo
 While a PWA can be served by any means, it can request a lot of data, dynamic updates and make calls to services. This works best with a modern server.
 
 
-## [Next> Anatomy of a Web Site](Anatomy.md)
+[Next> Anatomy of a Web Application](Anatomy.md)

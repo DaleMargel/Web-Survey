@@ -1,4 +1,4 @@
-# Platform / Language
+# Platform Language
 Of course this refers to javascript.
 
 What version of javascript/typescript to use? This is really a question of how much pain you wish to accept to support older browsers such as IE.
@@ -12,7 +12,7 @@ Javascript versions are confusing. The verions here are based on this [link](htt
 | ES3 | 1999 | Regular Expressions, try/catch | 
 | ES4 |      | Abandoned due to internal politics |
 | [ES5](https://caniuse.com/#feat=es5) | 2009 | Supported on 99.3% of browsers. Features include Function.prototype.bind, Array methods like indexOf, forEach, map & filter, Object methods like defineProperty, create & keys, the trim method on Strings and many more.<br><br>**TLDR; Offers only basic language features but is widely supported.** |
-| ES5.1 | 2011 | editorial changes |
+| ES5.1 | 2011 | Editorial changes |
 | [ES6/ES2015](https://caniuse.com/#feat=es6) | 2015 | Supported on 97.8% of browsers. Features include Promises, Modules, Classes, Template Literals, Arrow Functions, Let and Const, Default Parameters, Generators, Destructuring Assignment, Rest & Spread, Map/Set & WeakMap/WeakSet and many more.<br><br>**TLDR; This is a major upgrade to ES5. It adds modern language features that are needed by many frameworks. Browser support is only slightly less that ES5.** |
 | ES2016 | 2016 | Supported on about 94% of browsers, depending on feature. Features are Array.prototype.includes (95.4%) and Exponentiation Operator (92.5%) |
 | ES2017 | 2017 | Features include async, await, some object methods, string padding, shared memory.<br><br>**TLDR; Adds some features that helps developers write better code.** |
@@ -40,3 +40,5 @@ If the marketing department insists on the widest browser support then choose a 
 I have no strong opinion here. Typescript brings type safety to javascript but makes the toolchain slightly more complicated. For smaller applications, javascript is fine. For large applications, typescript might be better.
 
 For now, we will assume javascript.
+
+[Next> Platform / Rendering Engine](PlatformRendering.md)

@@ -1,4 +1,4 @@
-# Platform / IDE
+# Integrated Development Environment
 The Integrated Development Environment used to write code.
 
 | Product | Stars | Description |
@@ -7,4 +7,4 @@ The Integrated Development Environment used to write code.
 | [Eclipse IDE](https://www.eclipse.org/eclipseide/) | | Eclipse is a java / plugin based IDE that has been around for many years. |
 | [Eclipse Thiea](Thiea.md) | | An interesting approach to IDE's. |
 
-## [Next> Platform IDE](PlatformIDE.md)
+[Next> Platform / Repository](PlatformRepository.md) 

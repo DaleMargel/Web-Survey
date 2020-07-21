@@ -44,7 +44,7 @@ There are languages that, usually via [LLVM](https://llvm.org/), can target a la
 
 Also on the radar is Web Assembly (WASM). This is low level code that can run on a web browser. It cannot directly interact with the user interface (yet), but will become more important over time.
 
-I use the term "cross-platform" to mean that the same code can be rendered native as well as on a web browser with little or no changes. Most of the languages below can render on a browser through javascript, but not in a cross-platform manner.
+I use the term "cross-platform" to mean that the same code can render native as well as on a web browser with little or no changes. Most of the languages below can render on a browser through javascript, but not in a cross-platform manner.
 
 | Product | Description |
 | ------- | ----------- |
@@ -54,4 +54,4 @@ I use the term "cross-platform" to mean that the same code can be rendered nativ
 | [Rust](https://www.rust-lang.org/) | <p>A C++ replacement that compiles nicely to most native platforms and WASM. It is intended as a system language for large code bases. I included this because it seems to be the preferred way to create high quality WASM</p>  |
 | [Go](https://golang.org/) | <p>A C++ replacement that runs on most platforms, but most especially servers. I included this because there is a large ecosystem of server-based technologies written in this language</p> |
 
-## [Next> Approaches](Approaches.md)
+[Next> Technology Stack](TechStack.md)

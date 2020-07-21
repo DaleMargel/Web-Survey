@@ -4,7 +4,7 @@ An opinionated overview of the many (and in my view, the best) ways to build an 
 ## Why?
 If you were to set up an ideal application development platform which one would you choose?
 
-I have been a developer or an architect for 40-ish years. I have seen the innards of countless systems written in a mind-numbing number of technologies and platforms. The most common feature of these systems is that they are overly complicated for what they do. This means they cost more to develop and maintain. It also means that they have more bugs and are more likely to break under stress or change.
+I have been a developer or an architect for 40-ish years. I have seen the innards of countless systems written in a mind-numbing number of technologies and platforms. The most common feature of these systems is that they are overly complicated for what they do. This means they cost more to develop and maintain. They also have more bugs and are more likely to break under stress or change.
 
 This review asks one question: 
 
@@ -27,13 +27,14 @@ The following symbols are used in the tables:
 3. [Technology Stack](TechStack.md)
 4. [Anatomy of a Web Application](Anatomy.md)
 5. Client Platform
-    1. [Religious War Issues](PlatformReligion.md)
-	2. [Integrated Development Environment](PlatformIDE.md)
-	3. [Language Version](PlatformLanguage.md)
-	4. [Rendering Engine](PlatformRendering.md)
-	5. [Widget Design](PlatformDesign.md#design) 
-	6. [Widget Catalog](PlatformDesign.md#catalog) 
-	7. [Widget Structure](PlatformDesign.md#structure)
+    1. [Team Dogma](PlatformDogma.md)
+	2. [IDE](PlatformIDE.md)
+	3. [Repository](PlatformRepository.md)
+	4. [Language](PlatformLanguage.md)
+	5. [Rendering Engine](PlatformRendering.md)
+	6. [Visual Design](PlatformVisualDesign.md#design) 
+	7. [Widget Catalog](PlatformVisualDesign.md#catalog) 
+	9. [Widget Structure](PlatformVisualDesign.md#structure)
 6. Quality
 	1. Code Linting
 	2. Unit Tests
@@ -65,4 +66,4 @@ The following symbols are used in the tables:
 	2. Container Orchestration
 	3. Host Server
 
-## [Next> Wish List](WishList.md)
+[Next> WishList](WishList.md)

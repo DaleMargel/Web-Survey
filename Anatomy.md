@@ -1,35 +1,23 @@
 # Anatomy of a Web Application
-A full web development environment and application have many moving parts. To some degree, all of these items should be decided - even if the choice is to ignore it.
-
-
-## [Coder Religion](Religion.md)
-Things that should not matter but do.
-
-| Aspect | Description |
-| ------ | ----------- |
-| [Setting](Religion.md#setting) | Where you do the work |
-| [OS](Religion.md#os) | Development operating system |
-| [Code Standards](Religion.md#code-standards) | Placement of brackets, capitalization, etc. |
-| [Tabs or Spaces](Religion.md#tabs-or-spaces) | Use of Tabs or Spaces |
-| [Legacy Support](Religion.md#legacy-support) | Do we support obsolete browsers? |
-
+A full web development environment might have many moving parts. Here are mamy of them.
 
 ## Platform
 The technology and structure of the application.
 
 | Aspect | Description |
 | ------ | ----------- |
-| [IDE](IDE.md) | The Integrated Development Environment used to write code  |
-| [Repository](Repository.md) | A service to store and version code |
-| [Language](Language.md) | What version of javascript to use |
-| [Templating](Templating.md) | Render web page with data |
-| [Design](VisualDesign#design) | Styling of controls |
-| [Catalog](VisualDesign#catalog) | Library and showcase for controls |
-| [Structure](VisualDesign#structure) | Handling of complex control hierarchies |
+| [Team Dogma](PlatformDogma.md) | Things that should not matter - but do |
+| [IDE](PlatformIDE.md) | The Integrated Development Environment used to write code  |
+| [Repository](PlatformRepository.md) | A service to store and version code |
+| [Language](PlatformLanguage.md) | What version of javascript to use |
+| [Rendering Engine](PlatformRendering.md) | Render web page with data |
+| [Visual Design](PlatformVisualDesign#design) | Styling of controls |
+| [Widget Catalog](PlatformVisualDesign#catalog) | Library and showcase for controls |
+| [Widget Structure](PlatformVisualDesign#structure) | Handling of complex control hierarchies |
 
 
 ## Quality
-Writing an application that works correctly and quickly.
+Writing an application that works quickly and correctly.
 
 | Aspect | Description |
 | ------ | ----------- |
@@ -42,11 +30,11 @@ Writing an application that works correctly and quickly.
 | Code Size | Track code size during development |
 | Profile | Look for slow parts of application |
 | Legacy Support | What do we support and how? |
-| SSR | Server Side Rendering creates pages on server for extra speed |
+| SSR | Server Side Rendering |
 
 
 ## Services
-Things that you need to interact with the real world.
+Creating an awesome back end server.
 
 | Aspect | Description |
 | ------ | ----------- |
@@ -61,9 +49,9 @@ Things that you need to interact with the real world.
 | Logger | Record errors for future analysis |
 | Log Browser | Analyse logs |
 | Load Balancer | Distributes requests among servers |
-| Rate Limiting | Prevents server from being overwhelmed by requests |
+| Rate Limiting | Prevents server from being overwhelmed |
 | Analytics | Determine who is using the site and how? |
-| SEO | Search Engine Optimizations lets Google properly index the site |
+| SEO | Search Engine Optimizations |
 
 
 ## Deployment
@@ -75,4 +63,4 @@ Packaging and hosting the application
 | Orchestration | Coordinate containers |
 | Server | The server that runs it all |
 
-## [Next> Code Religion](Religion.md)
+[Next> Platform / Team Dogma](PlatformDogma.md)
