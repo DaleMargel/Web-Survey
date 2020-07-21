@@ -1,6 +1,16 @@
 # Team Dogma
 This section should be tongue-in-cheek except that people actually argue about these things. At the risk of starting a war, let's dive in.
 
+## Landing Page
+What is needed on a landing page? This should be simple and minimal, but it is not.
+
+These generate html landing pages. Probably use both of these and pick a combination. Some descriptions taken from web sites. Stars updated on 2020.07.20.
+
+| Source | Stars | Description |
+| ------ | -----:| ----------- |
+| [HTML5 boilerplate](https://github.com/h5bp/html5-boilerplate)💗 | ★46.4k |The web’s most popular front-end template. HTML5 Boilerplate helps you build fast, robust, and adaptable web apps or sites. Kick-start your project with the combined knowledge and effort of 100s of developers, all in one little package. |
+| [HTML Shell](http://htmlshell.com/) | | A live generation application for what you need. Quite elegant really. Unfortunately, it looks outdated. |
+
 ---
 ## Setting
 A narrative out there is a young coder with a hipster beard porting a Mac laptop and writing brilliant code from a coffee shop in Katmandu while travelling the world. 
@@ -24,7 +34,7 @@ What operating system is used on the destop / laptop for development?
 | ------ | ----------- |
 | MacOS | I have no experience with Apple products (by choice). |
 | Windows | Unless you are using Visual Studio / C#, Windows seems to make development more difficult in a million small ways. |
-| 💗Linux | I honestly love using my MX Linux (a Debian derivative) for development. It is free and runs well on an 8 year old recycled laptop. If your server also runs Linux, the experience is smooth and seamless. |
+| 💗Linux | I honestly love using MX Linux (a Debian derivative) for development. It is free and runs well on an 8 year old recycled laptop. If your server also runs Linux, the experience is smooth and seamless. |
 
 I guess it is really just a matter of taste.
 
