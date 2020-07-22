@@ -80,6 +80,6 @@ Heresy is still the choice if you want custom elements, hooks, JSX-like tagged t
 - Heresy (+ siblings) - If you want to walk on the wild side.
 - Preact+HTM - if you want a compromise between the two.
 
-I choose Preact+HTM in order to have a lightweight environment that can leverage many of the tools built for React. Later I will try the heretical approach when I am able.
+I choose Preact+HTM in order to have a lightweight environment that can leverage many of the tools built for React. I also plan on giving Heresy (or sibling) a try once I have sorted out which one(s) to use.
 
 [Next> Platform / Visual Design](PlatformVisualDesign.md#design)
