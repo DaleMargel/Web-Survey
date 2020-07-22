@@ -5,6 +5,8 @@ This is a HUGE topic and there are a great number of products that do this. At i
 
 For a real-life comparisons of the various frameworks, look at [ToDo MVC](http://todomvc.com/). For even better PWA-specific comparisons look at [HackerNews PWA](https://hnpwa.com/). There are a lot of comparison sites for React, Vue, Angular. Here is [one of them](https://www.codeinwp.com/blog/angular-vs-vue-vs-react/).
 
+Stars current as of 2020.07.22
+
 | Product | Stars | Description |
 | ------- | -----:| ----------- |
 | [Vue](https://github.com/vuejs/vue) | ★168k | "a progressive framework for building user interfaces." |
