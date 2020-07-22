@@ -1,7 +1,7 @@
 # Platform Build Tools 
-Sometimes you need to build your system.
+Sometimes you need to build and bundle your system.
 
-These are tools that compile javascript to javascript making some changes to it along the way. React does this to convert JSX to javascript and package libraries into a saner structure.  
+These are tools that compile javascript to javascript making some changes to it along the way. React does this to convert JSX to javascript and package libraries into a saner structure.
 
 Stars updated on 2020.07.20.
 
@@ -26,16 +26,16 @@ The author thinks that the whole npm/package infrastructure is broken. He is als
 
 ## Why transpiling and bundling are not always necessary:
 
-- As of mid 2020, Node.js supported ESM modules (at least experimentally). Previously a bundler was needed to gather all NPM (CJS) modules and write them to a format that the browser could use. Read this [Modules Introduction](https://javascript.info/modules-intro) for a bit of context.
+- As of mid 2020, Node.js supports ESM modules (at least experimentally). Previously a bundler was needed to gather all NPM (CJS) modules and write them to a format that the browser could use. Read this [Modules Introduction](https://javascript.info/modules-intro) for a bit of context.
 
 - [Deno](https://deno.land/), the successor to Node, uses ESM modules and accepts TypeScript so no transpiling or bundling is needed.
 
-- [Unpkg](https://unpkg.com/) "a fast, global content delivery (CDN) network for everything on npm. Use it to quickly and easily load any file from any package using a URL". TLDR; No transpiler needed, NPM files are already available online.
+- [Unpkg](https://unpkg.com/) publishes all NPM (CJS) files as (ESM). They are all available online and ready to go. No transpiler needed.
 
-- React injects JSX into javascript through a transpiler. JSX was originally adopted because no equivalent templating engine existed in javascript. Now it does: tagged template literals can replace JSX, resulting in smaller, faster code with no need for transpiling.
+- React injects JSX into javascript through a transpiler. JSX was originally adopted because no equivalent templating existed in javascript. Now it does: tagged template literals can replace JSX, resulting in smaller, faster code with no need for transpiling.
 
 - React and others transpiled down to ES5 so that older browsers could be supported (mostly older IE versions).
   - ES6/ES2015 has major changes that do not translate nicely to ES5. Transpiling results in code bloat. 
-  - In the meanwhile all IE versions have become unsupported except for IE11 - which represents 1.38% of browsers.  
+  - In the meanwhile all IE versions have become unsupported except for IE11 - which represents 1.38% of browsers and falling.  
 
 Libraries like "[Preact](https://github.com/preactjs/preact)" with "[Htm](https://github.com/developit/htm)" allow React-like code to be written that runs directly on the browser with no intermediate processing. It is smaller and faster too. My choice is to use these whenever you can.
