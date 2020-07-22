@@ -27,12 +27,14 @@ It appears that 75% of users are on an evergreen browser. These support the most
 | ES1-4 | Obsolete. Over 20 years old, do not use |
 | ES5  | Use when wide browser support is VERY important. ES5 lacks many modern language features that are needed by most frameworks, so the code will likely have to be transpiled from a higher version of javascript. This can bloat the code and introduce subtle bugs. This [article](https://medium.freecodecamp.org/you-might-not-need-to-transpile-your-javascript-4d5e0a438ca) explains it (2017). At best, you might increase browser support by 1%-2%. It is worth it? You be the judge.  |
 | ES6/ES2015 | Use this to obtain a balance of modern language features and wide browser support. This version is a major upgrade to javascript and the minimum version that I think should be deployed to the web. |
-| ES2017 | This version add asynchronous handling which is sweet for the developers, but not a show stopper. Earlier versions use other means to do this. Versions beyond this add obscure features that might not be needed. |
+| ES2017 | This version adds some features that advanced developers would want to use. This might not be quite as widely supported, but the developers experience is wonderful. |
+| ES2018+ | Mostly esoteric additions. Use it if you need it. |
 
 Overall, in my opinion (as of mid 2020):
-- Write code using what features you need to use.
+- Write code using features you need (up to ES2017).
 - Write or transpile to ES2015 if you are concerned with browser support.
-- Do not transpile to ES5 for general use.
+- Do not transpile to ES5 if it can be avoided.
+- If in doubt, check [caniuse.com](https://caniuse.com/).
 
 If the marketing department insists on the widest browser support then choose a technology that supports ES5. Otherwise transpile to ES5 but as a separate application. This way your regular users do not pay for those that are still using obsolete browsers. You might also have success with isomorphic rendering or Server Side Rendering (SSR).
 

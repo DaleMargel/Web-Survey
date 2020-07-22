@@ -1,7 +1,7 @@
 # Platform Build Tools 
-Sometimes you need to build your system. Here's how.
+Sometimes you need to build your system.
 
-Hopefully I will not have to use one of these, but it might be hard not to. These are tools that compile javascript to javascript making some changes to it along the way. React does this to convert JSX to javascript and package libraries into a saner structure. I personally do not like the idea, but in a large project it might be a necessity. There is a great article [here](https://jasonformat.com/enabling-modern-js-on-npm/) that explains the whole situation and says: "the dependencies we install from npm are stuck in 2014" - and therefore we need to package things... The author thinks that the whole npm/package infrastructure is broken. He is also the author of preact and htm, so he seems to prefer things be lightweight. 
+These are tools that compile javascript to javascript making some changes to it along the way. React does this to convert JSX to javascript and package libraries into a saner structure.  
 
 Stars updated on 2020.07.20.
 
@@ -17,3 +17,25 @@ Stars updated on 2020.07.20.
 | [Terser](https://github.com/terser/terser) | ★4.5k | "A JavaScript parser and mangler/compressor toolkit for ES6+." |
 | [Zwitterion](https://github.com/lastmjs/zwitterion)💗 | ★489 | This is web dev server that lets you import anything to the browser: JavaScript ES2015+, TypeScript, JSON, JSX, TSX, AssemblyScript, Rust, C, C++, WebAssembly, and in the future anything that compiles to JavaScript or WebAssembly. Normally you have to run webpack to transpile these into something the browser understands. Zwitterion does the conversion automatically. To create a static build for production, run Zwitterion with the `--build-static` option. Under the hood it appears to use the `node.http` as the base server and calls webpack as needed. |
 | [Preppy](https://github.com/sebastian-software/preppy) | ★22 | "A simple and lightweight tool for preparing the publish of NPM packages. Creates multiple output formats (ESM, CommonJS, UMD, ...)" |
+
+Transpiling adds complexity to a project - but in a large project it might be necessary. This [article](https://jasonformat.com/enabling-modern-js-on-npm/) explains the whole situation and quotes: 
+
+> "the dependencies we install from npm are stuck in 2014 - and therefore we need to package things..."
+
+The author thinks that the whole npm/package infrastructure is broken. He is also the creator of "preact" and "htm", so he seems to prefer things be lightweight. I agree.
+
+## Why transpiling and bundling are not always necessary:
+
+- As of mid 2020, Node.js supported ESM modules (at least experimentally). Previously a bundler was needed to gather all NPM (CJS) modules and write them to a format that the browser could use. Read this [Modules Introduction](https://javascript.info/modules-intro) for a bit of context.
+
+- [Deno](https://deno.land/), the successor to Node, uses ESM modules and accepts TypeScript so no transpiling or bundling is needed.
+
+- [Unpkg](https://unpkg.com/) "a fast, global content delivery (CDN) network for everything on npm. Use it to quickly and easily load any file from any package using a URL". TLDR; No transpiler needed, NPM files are already available online.
+
+- React injects JSX into javascript through a transpiler. JSX was originally adopted because no equivalent templating engine existed in javascript. Now it does: tagged template literals can replace JSX, resulting in smaller, faster code with no need for transpiling.
+
+- React and others transpiled down to ES5 so that older browsers could be supported (mostly older IE versions).
+  - ES6/ES2015 has major changes that do not translate nicely to ES5. Transpiling results in code bloat. 
+  - In the meanwhile all IE versions have become unsupported except for IE11 - which represents 1.38% of browsers.  
+
+Libraries like "[Preact](https://github.com/preactjs/preact)" with "[Htm](https://github.com/developit/htm)" allow React-like code to be written that runs directly on the browser with no intermediate processing. It is smaller and faster too. My choice is to use these whenever you can.
