@@ -2,7 +2,7 @@
 At this point, we have selected PWA as our preferred approach. Depending on scale, there are a few stacks that can be used. I will list what I know in increasing capability. The names used here are my own.
 
 ---
-## Minimal
+## No Server
 Just to start the ball rolling...
 
 The most minimal web page I have encountered so far was listed in [PC World](https://www.pcworld.com/article/2360940/turn-any-browser-tab-into-a-basic-text-editor.html). Paste the following into your browser URL field and you will get a nice editor.
@@ -47,7 +47,7 @@ This approach works best for sites where a single author changes simple content 
 ## Classic Server
 These are old-style sites where the server generates a new page for each interaction with the user. The most popular of these is [LAMP](https://blog.heroix.com/blog/monitoring-the-lamp-stack-using-longitude) - an acronym for Linux + Apache + MySQL + PHP (or Perl). Most web sites in the wild use this sort of structure, so term LAMP often refers to this family of technologies.
 
-A classic server typically will run PHP, Java, C# or even Visual Basic. It will connect with a back end database, usually SQL. It will contain a templating engine of some sort that intermixes data and html. A typical interaction with run as follows:
+A classic server typically will run PHP, Java, C# or even Visual Basic. It will connect with a back end database, usually SQL. It will contain a templating engine of some sort (e.g., ASP, JSP) that intermixes data and html. A typical interaction with run as follows:
 
 1. A browser requests a URL from the server
    - Security is handled by the server.
@@ -56,7 +56,7 @@ A classic server typically will run PHP, Java, C# or even Visual Basic. It will 
 2. The server interprets this request
 	- data is updated to the database if needed.
 	- data is fetched from the database if needed.
-3. The server generates a new web page with data.
+3. The server generates a new web page with requested data.
 4. The server sends the web page to the browser as a response.
 
 Typically there is no need for javascript on the browser. The context (state / session) are maintained by the server. Because this approach has been around for a long time, there are a lot of products that support it.
@@ -64,15 +64,22 @@ Typically there is no need for javascript on the browser. The context (state / s
 This approach works best for small, low volume sites for which cheap hosting might be important. Often the software uses preconfigured templates that make a site easy to set up.
 
 ---
-## 💗Modern Server
+## Modern Server
 A modern server can serve web pages or data. The most popular one is MEAN: MongoDB + Express + Angular + Node.js. These differ from a classic server in that:
-- the browser can request web pages or data
+- the browser can request a web page but also data, pushed data, streams, etc.
 - the server can push data to the browser
 - screen updates can be handled on the browser
 - heavy reliance on javascript on the browser
 - server is more configurable
+- often written in Nodejs
 
 While a PWA can be served by any means, it can request a lot of data, dynamic updates and make calls to services. This works best with a modern server.
+
+## 💗Industrial Server
+These are just Modern Servers designed to handle insane loads safely and securely. I use this term because they are built differently than a typical nodejs server. These are most often assembled from large prefabricated pieces of stand-alone software written in a performant language like Go. They can be built into containers like Docker, and connected together using a something like Docker-Compose, Docker Swarm or Kubernetics. They use a service-based architecture that can be spread out over many servers. These can be self-built and hosted, or they can be rented as cloud services. Ideally you can do both.
+
+These need special consideration and are discussed at length later in this document. 
+
 
 # Holotypes
 In the article [Application Holotypes: A Guide to Architecture Decisions](https://jasonformat.com/application-holotypes/), Jason Miller describes the main categories of web applications and their overall architecture. This can inform our choice of tools, or at least get us thinking about the type of application we are writing. Spoiler: they are all PWA.

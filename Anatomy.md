@@ -14,7 +14,7 @@ The technology and structure of the application.
 | [Visual Design](PlatformVisualDesign.md#design) | Styling of controls |
 | [Widget Catalog](PlatformVisualDesign.md#catalog) | Library and showcase for controls |
 | [Widget Structure](PlatformVisualDesign.md#structure) | Handling of complex control hierarchies |
-| [Build](PlatformBuild.md)| How to build your system. |
+| [Build Tools](PlatformBuild.md)| How to build your system. |
 
 
 ## Quality

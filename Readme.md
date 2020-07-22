@@ -1,8 +1,8 @@
 # The Search for the Holy Grail
-An opinionated overview of the many (and in my view, the best) ways to build an application.
+An opinionated exploration of the many (and best) ways to build an application.
 
 ## Why?
-If you were to set up an ideal application development platform which one would you choose?
+If you were to set up an ideal application development platform - which one would you choose?
 
 I have been a developer or an architect for 40-ish years. I have seen the innards of countless systems written in a mind-numbing number of technologies and platforms. The most common feature of these systems is that they are overly complicated for what they do. This means they cost more to develop and maintain. They also have more bugs and are more likely to break under stress or change.
 
@@ -67,5 +67,7 @@ The following symbols are used in the tables:
 	1. Containers
 	2. Container Orchestration
 	3. Host Server
+
+> While researching these topics I kept bumping in to works by [Jason Miller](https://github.com/developit). I have adopted a lot of it and would like to thank him for sharing.
 
 [Next> WishList](WishList.md)
