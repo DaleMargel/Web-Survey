@@ -17,9 +17,10 @@ The following symbols are used in the tables:
 | Symbol | Descripton |
 |:------:| ---------- |
 | ★ | Github stars, a rough indicator or popularity |
-| 💗 | I like this item |
+| 💗 | I like this |
 | ❎ | Do not adopt, there is some gotcha or other problem |
 | ▶ | Standard technology, should adopt even if I do not like it. |
+| ⚑ | This looks interesting. I should look into at some point. |
 
 ## Table of contents
 1. [Wish List](WishList.md)
@@ -34,7 +35,8 @@ The following symbols are used in the tables:
 	5. [Rendering Engine](PlatformRendering.md)
 	6. [Visual Design](PlatformVisualDesign.md#design) 
 	7. [Widget Catalog](PlatformVisualDesign.md#catalog) 
-	9. [Widget Structure](PlatformVisualDesign.md#structure)
+	8. [Widget Structure](PlatformVisualDesign.md#structure)
+	9. [Build Tools](PlatformBuild.md)
 6. Quality
 	1. Code Linting
 	2. Unit Tests

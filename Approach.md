@@ -6,7 +6,7 @@ There are a lot of interesting technologies out there. While this is not a compr
 | Native | These are tools that target one platform. The application must be re-written mostly from scratch for each platform. This does not align with our goals, so we shall skip it henceforth. |
 | Multi Target | These are languages that can target a large number of platforms. Typically these do not support web, or they don't support it very well. |
 | Web Hybrid | These are web pages with a web browser and web server bolted on to them. They look good and run anywhere, but they are very big. See: [Capacitor](https://capacitorjs.com/), [Ionic](https://ionicframework.com/), [Electron](https://www.electronjs.org/), [NWJS](https://nwjs.io/), [PhoneGap](https://phonegap.com/), [Cordova](https://cordova.apache.org/). Extra points to NWJS for being really simple to use. |
-| 💗[PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) | A Progressive Web Application (PWA) is a design pattern that allows web pages to be run as regular applications using the local web browser as a run time agent. These tend to be small and run on any platform that has an evergreen web browser (which is most). |
+| [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)💗 | A Progressive Web Application (PWA) is a design pattern that allows web pages to be run as regular applications using the local web browser as a run time agent. These tend to be small and run on any platform that has an evergreen web browser (which is most). |
 
 ## And the winner is...
 Progressive Web Applications (PWA) are the best approach for our needs. A PWA is just a type of web page. It can be served by any web server. Once in play, it responds to the user actions directly and updates itself as needed. It can connect to a back end server to request data and dynamically update as the data changes. This approach works best for modern-style applications that will play nicely with Desktop and Mobile browsers.
@@ -37,7 +37,7 @@ There are some frameworks that deserve mention. The issue with most of these is 
 | ------- | ----------- |
 | [React / Native](https://reactnative.dev/) | <p>Insanely popular ecosystem for Mobile / Web. No Desktop support and Web applications can become very large</p> |
 | [NativeScript](https://nativescript.org/) | <p>Accepts html-like/css/javascript code and renders it natively to Mobile platforms. No Desktop support. </p> |
-| [Flutter](https://flutter.dev/) | <p>Uses the Dart language and targets Desktop / Mobile / Web. Developers seem to like it and it is rising quickly in popularity. I have not used it yet, but from what I see, it is worth a try.</p>  |
+| [Flutter](https://flutter.dev/)⚑ | <p>Uses the Dart language and targets Desktop / Mobile / Web. Developers seem to like it and it is rising quickly in popularity. I have not used it yet, but from what I see, it is worth a try.</p>  |
 
 ## Special Mention / Languages
 There are languages that, usually via [LLVM](https://llvm.org/), can target a large number of platforms. The issue with most of these is that the web display model (DOM) is quite different from native display models - making it difficult to bridge.
