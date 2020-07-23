@@ -26,9 +26,7 @@ Multi-target platforms take the first approach; Web hybrid take the second.
 This is the best way to write an application for a single platform. It is the most expensive way to write an applicaton for many platforms. If we want to target Web, Linux, Windows, Mac, Android, and iOS we need to write the application 6 times. All of these would be quite different and need a lot of detailed knowlege about the platform and the tools used. This is not feasable.  
 
 ## Multi-Target
-There are languages that, usually via [LLVM](https://llvm.org/), can target a large number of platforms. 
-
-Many of these have tools that enable running on multiple platforms using the same code. Often these tools do not support Web, or support it badly.
+There are languages that, usually via [LLVM](https://llvm.org/), can target a large number of platforms. Many of these have tools that enable running on multiple platforms using the same code. Often these tools do not support Web, or support it badly.
 
 Also on the radar is Web Assembly (WASM). This is low level code that can run on a web browser, but cannot (yet) directly write to the screen.
 
@@ -56,7 +54,8 @@ These run web code in a native runtime, typically bolting a web server and brows
 | [NWJS](https://nwjs.io/) | "NW.js (previously known as node-webkit) lets you call all Node.js modules directly from DOM and enables a new way of writing applications with all Web technologies." / No Mobile |
 | [PhoneGap](https://phonegap.com/) | "Adobe PhoneGap framework is an open source distribution of Cordova" / No Desktop |
 | [Cordova](https://cordova.apache.org/) | "Mobile apps with HTML, CSS & JS. Target multiple platforms with one code base" / No Desktop |
- Extra points to NWJS for being really simple to use.
+
+Extra points to NWJS for being really simple to use.
 
 
 ## Progressive Web Application (PWA)
@@ -64,13 +63,14 @@ This is my preferred choice.
 
 A PWA is just a web page that uses a few conventions to allow the browser to handle it as an application. In other words, an installable web application. When not installed they are run as an ordinary web page.
 
-Unlike classic web pages, these can depend heavily on javascript executing on the browser. This makes them vulnerable to browsers that do not support modern javascript (i.e., IE, older Safari). Also beware that code running on the browser is not secure.  
+Unlike classic web pages, these can depend heavily on javascript executing on the browser. They are also vulnerable to browsers that do not support modern web standards (i.e., IE, older Safari) - but gracefully degrade when used as such. Also beware that code running on the browser is not secure.  
 
 Advantages:
 
-- Look and feel similar to a native application.
+- Treated as native application.
 - Write once, run anywhere.
-- Easy to locate (web search) and install (click of a button).
+- Easy to find on web (web search).
+- Quick and easy to install (click of a button).
 - No App Stores to deal with.
 - Updates are automatically applied.
 - No need for a connected server.
@@ -78,9 +78,9 @@ Advantages:
 
 Disadvantages:
 
-- Heavy reliance on client using modern javascript.
-- Depends on client computing capability.
+- Rely on modern browser, but degrade gracefully.
 - Not as fast or capable as native code.
+- Web look & feel rather than native.
 - Code on client is not secure.
 
 
