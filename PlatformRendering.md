@@ -57,7 +57,7 @@ Polymer used to be my preferred approach until Web Components were killed by W3C
 ## Heresy
 Heresy used to be the most recent in a long line of experiments by [WebReflection](https://github.com/WebReflection). I took this one for a serious test drive and really liked it. However, like a teenager with OCD, Andrea has since moved on and created several more (awesome) experiments. None of these sit long enough to accumulate a lot of github stars, but no matter. There is some amazing work here; his github page is like a developer candy store.
 
-With over a dozen ways to write a web site, Andrea was kind enough to create a guide [look here](https://gist.github.com/WebReflection/761052d6dae7c8207d2fcba7cdede295). There is also a picker application that lets you choose the best option according to what you want. Most of these support IE11 out of the box.
+With over a dozen ways to write a web site, Andrea was kind enough to create a [selection guide](https://gist.github.com/WebReflection/761052d6dae7c8207d2fcba7cdede295). There is also a picker application that lets you choose the best option based on what features you want. Most of these support IE11 out of the box.
 
 From his own [web site](https://gist.github.com/WebReflection/761052d6dae7c8207d2fcba7cdede295). Stars current as of 2020.07.22/sorted.
 
@@ -68,20 +68,29 @@ From his own [web site](https://gist.github.com/WebReflection/761052d6dae7c8207d
 | [heresy/ssr](https://github.com/WebReflection/heresy) | ★218 | "lighterhtml + augmentor + Custom Elements" |
 | [neverland](https://github.com/WebReflection/neverland) | ★199 | "lighterhtml + dom-augmentor" |
 | [wikedElements](https://github.com/WebReflection/wicked-elements)| ★189 | "custom elements without custom elements ... *wait, what?*" |
-| [HyperHTMLElement](https://github.com/WebReflection/hyperHTML-Element) | 162 | "custom elements via hyperHTML" |
+| [HyperHTMLElement](https://github.com/WebReflection/hyperHTML-Element) | ★162 | "custom elements via hyperHTML" |
 | [µhtml](https://github.com/WebReflection/uhtml) | ★154 | "HTML/SVG auto-keyed and manual keyed render" |
 | [augmentor](https://github.com/WebReflection/augmentor) | ★91 | "augmentor (hooks for anything)" |
 | [µce](https://github.com/WebReflection/uce) | ★52 | "Custom Elements via µhtml" |
 | [dom-augmentor](https://github.com/WebReflection/dom-augmentor)| ★49 | "augmentor with DOM auto-hooked useEffect" |
 | [hookedElements](https://github.com/WebReflection/hooked-elements) | ★26 | "wickedElements + augmentor" |
 
-Heresy is still the choice if you want custom elements, hooks, JSX-like tagged template literals, and optional SSR. It looks and handles much the same as Preact+HTM. However there are about a dozen libraries here and one of them is sure to be exactly what you are looking for.
+Heresy is still the best choice if you want custom elements, hooks, JSX-like tagged template literals, and optional SSR. It looks and handles much the same as Preact+HTM or React for that matter. There are also a dozen other libraries here and one of them is sure to be exactly what you are looking for.
 
-## Choice
+## DOM Diffing
+Updating the DOM is time-consuming so many frameworks keep track of what has changed and only update that part of the screen. The main difference between React, Preact and Heresy is the approach to tracking these changes.
+
+- React maintains a virtual DOM, a sort of copy of how the screen should look. It compares the virtual DOM with the current one to determine what has changed. This can take time and a lot of memory.
+
+- Preact works in a similar manner as React, but the code was written to be fast and light [(see video)](https://www.youtube.com/watch?v=LY6y3HbDVmg&feature=youtu.be). 
+
+- Heresy takes advantage of tagged template literals. The only DOM elements that can change are those bits represented by the "holes". This lets heresy make the DOM diffing extremely light and blazingly fast without the need for a virtual DOM.
+
+## Weapon Choice
 - React - If you want a conventional development experience.
-- Heresy (+ siblings) - If you want to walk on the wild side.
+- Heresy (or siblings) - If you want to walk on the wild side.
 - Preact+HTM - if you want a compromise between the two.
 
-I choose Preact+HTM in order to have a lightweight environment that can leverage many of the tools built for React. I also plan on giving Heresy (or sibling) a try once I have sorted out which one(s) to use.
+I choose Preact+HTM in order to have a lightweight environment that can (in theory) leverage many of the tools built for React. I also plan on giving Heresy (or sibling) another try once I have sorted out which one(s) to use.
 
 [Next> Platform / Visual Design](PlatformVisualDesign.md#design)
