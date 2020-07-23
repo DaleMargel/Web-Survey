@@ -37,6 +37,7 @@ The following symbols are used in the tables:
 	7. [Widget Catalog](PlatformVisualDesign.md#catalog) 
 	8. [Widget Structure](PlatformVisualDesign.md#structure)
 	9. [Build Tools](PlatformBuild.md)
+	10. Accessibility / ARIA
 6. Quality
 	1. Code Linting
 	2. Unit Tests
@@ -68,6 +69,6 @@ The following symbols are used in the tables:
 	2. Container Orchestration
 	3. Host Server
 
-> While researching these topics I kept bumping in to works by [Jason Miller](https://github.com/developit). I have adopted a lot of it and would like to thank him for sharing.
+> While researching these topics I kept bumping in to works by [Jason Miller](https://github.com/developit), a fellow Canadian. I have adopted a lot of it and would like to thank him for sharing.
 
 [Next> WishList](WishList.md)
