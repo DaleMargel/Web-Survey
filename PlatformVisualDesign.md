@@ -57,41 +57,46 @@ Design Systems are pre-packaged libraries of styled controls that can be immedia
 
 A large list can be found at [Awesome Design Systems](https://github.com/alexpate/awesome-design-systems). Here are a few picks, with a slight bias for Preact.
 
-Stars udated 2020.07.23
-
+Stars udated 2020.07.23<br>
+See Legend after table.
 
 | Package | Stars | Description |
 | ------- | -----:| ----------- |
-| [Ant Design](https://github.com/ant-design/ant-design/) | ★61.9k | "A UI Design Language and React UI library." / [Home Site](https://ant.design/). Very complete set of commercial grade controls tightly integrated with React/Typescript. Also integrations with Angular and Vue. 62 controls, Figma+Sketch support. The controls look nice but conventional. |
+| [Ant Design](https://github.com/ant-design/ant-design/) | ★61.9k | Home: [Ant Financial](https://ant.design/) (Alibaba?) <br>Controls: 62 formal / standard<br>Targets: React, Angular, Vue with Storybook, Sketch tooling |
 | [Material.io](https://material.io/) | | This is the main site for Material Design stuff for Web, IoS, Android and Flutter. It mostly describes the specification. |
-| [Material UI](https://github.com/mui-org/material-ui) | ★55.9k | "React components for faster and easier web development. / [Home site](https://material-ui.com/). Build your own design system, or start with Material Design." / Very complete set of commercial controls that integrate with React, Preact, Gatsby, NextJs etc. (See example projects) 100+ controls. The controls look googly as expected. |
-| [Evergreen](https://github.com/segmentio/evergreen) | ★9.9k | "Evergreen components are built on top of a React UI Primitive for endless composability" / [Home Site](https://evergreen.surge.sh/) 20 components. Fine formal look, "whitish" |
-| [Primer](https://primer.style/components/) | ★9.4k | "Primer was created for GitHub by GitHub. We love it so much, we chose to open-source it to allow the community to design and build their own projects with Primer." / [Home Site](https://primer.style/) 40 components, CSS and React. Looks like its GitHub alright. **NOTE**: This is a collection of 74 repositories that show just about everything you might want to know.  |
-| [Carbon](https://github.com/carbon-design-system/carbon) | ★3.2k | "Carbon is IBM’s open-source design system for products and experiences." / [Home Site](https://www.carbondesignsystem.com/) 34 controls, but few dozen types of charts! It appears to support React, Angular, Vue and Vanilla. It looks a bit formal, but the variety of charts is amazing. |
-| [Grommet](https://github.com/grommet/grommet) | ★6.5k | "grommet is a react-based framework that provides accessibility, modularity, responsiveness, and theming in a tidy package" / [Home Site](https://v2.grommet.io/) 49 components. This one has attitude and a large selection of charts. It integrates with Sketch, Figma (and others), story book and has a built in screen and theme designer. They make it look like fun.|
-| [Elastic UI](https://github.com/elastic/eui) | ★2.1k | "The Elastic UI Framework is a collection of React UI components for quickly building user interfaces at Elastic." / [Home Site](https://elastic.github.io/eui/#/) 77 components. Conventional but crisp, insanely good charts!  |
-| [Zendesk Garden](https://github.com/zendeskgarden) | ★774 | "Garden is a design system for Zendesk where we grow beautifully simple and accessible UI components." / [Home Site](https://garden.zendesk.com/) 21 components. React and CSS. Standard look.  |
-| [Pivotal](https://github.com/pivotal-cf/pivotal-ui) | ★631 | "The system is implemented as a Figma library, React components, and CSS styles that you can include in your project." / [Home Site](https://styleguide.pivotal.io/) 38 components, both react and css. The controls are basic |
-| [Material Components Preact](https://github.com/prateekbh/preact-material-components) | ★561 | "preact components for material-components-web" / [Home Site](https://material.preactjs.com/). Claims to be a thin wrapper around [Material Components Web](https://github.com/material-components/material-components-web) targeting preact. |
-| [BackPack](https://github.com/skyscanner/backpack) | ★359 | "Backpack is a collection of design resources, reusable components and guidelines for creating Skyscanner's products." / [Home Site](https://backpack.github.io/) 67 controls, targets Web, React Native, Android, iOS. bold appearance looks great! |
-| [Aragon UI](https://github.com/aragon/aragon-ui/) | ★210 | "Aragon-native toolkit of React UI components for decentralized apps, based on the Aragon Design System." / [Home Site](https://ui.aragon.org/modal/) 57 controls, nice controls, very "whiteish" overall |
-| [Pluralsight](https://github.com/pluralsight/design-system) | ★185 | "Components include a variety of common UI elements to bootstrap experiences ... these are React components." / [Home Site](https://design-system.pluralsight.com/) 43 components, storybook. components look really good! quite standard, and crisp |
-| [Balena](https://github.com/balena-io-modules/rendition) | ★134 | excellent design! 48 components including markdown and mermaid. Based on react, recompose, styled-components, and styled-systems. Good storybook catalog. The widgets look a bit like material, but different enough to know that you are not using it |
+| [Material UI](https://github.com/mui-org/material-ui) | ★55.9k | Home: [Material UI](https://material-ui.com/)<br>Controls: 50 normal / standard / look googly as expected<br>Targets: React, Preact, Gatsby, NextJs with themes |
+| [Evergreen](https://github.com/segmentio/evergreen) | ★9.9k | Home: [Segment / Evergreen](https://evergreen.surge.sh/)<br>Controls: 20 formal / standard<br>Targets: React |
+| [Primer](https://primer.style/components/) | ★9.4k | Home: [GitHub Primer](https://primer.style/)<br>Controls: 40 normal / standard / definately GitHub<br>Targets: React, CSS<br>Note: This is a collection of 74 repositories that show just about everything you might want to know.  |
+| [Carbon](https://github.com/carbon-design-system/carbon) | ★3.2k | Home: [IBM Carbon](https://www.carbondesignsystem.com/)<br>Controls: 34+ formal / advanced+charts<br>Targets: React, Angular, Vue,  Vanilla with sketch<br>Note: Variety of charts is amazing / needs sketch to extend |
+| [Grommet](https://github.com/grommet/grommet) | ★6.5k | Home: [Grommet](https://v2.grommet.io/) (Hewlett Packard?)<br>Controls: 49 technical / advanced, charts, markdown / with attitude<br>Targets: React with Sketch, Figma, Storybook, others<br>Note: accessiblity, theming, editors provided out of the box. |
+| [Elastic UI](https://github.com/elastic/eui) | ★2.1k | Home: [Elastic UI](https://elastic.github.io/eui/#/)<br>Controls: 77 technical / standard, charts / crisp look<br>Targets: React, CSS<br>Conventional but crisp, insanely good charts!  |
+| [Zendesk Garden](https://github.com/zendeskgarden) | ★774 | Home: [Home Site](https://garden.zendesk.com/)<br>Controls: 21 normal / standard<br>Targets: React, CSS |
+| [Pivotal UI](https://github.com/pivotal-cf/pivotal-ui) | ★631 | Home: [Pivotal UI](https://styleguide.pivotal.io/)<br>Controls 38 normal / standard<br>Targets: React, CSS with Figma |
+| [Preact Material Components](https://github.com/prateekbh/preact-material-components) | ★561 | Home: [Material Preact](https://material.preactjs.com/)<br>Targets: Preact<br>Note: Thin wrapper around [Material Components Web](https://github.com/material-components/material-components-web) targeting preact. |
+| [BackPack](https://github.com/skyscanner/backpack) | ★359 | Home: [Skyscanner Backpack](https://backpack.github.io/)<br>Controls: 67  technical / standard / bold appearance looks great!<br>Targets: React(?), CSS, React Native, Android, iOS with Sketch |
+| [Aragon UI](https://github.com/aragon/aragon-ui/) | ★210 | Home: [Aragon UI](https://ui.aragon.org/modal/)<br>Controls 57 formal / standard+charts<br>Targets: React |
+| [Pluralsight](https://github.com/pluralsight/design-system) | ★185 | Home: [Pluralsignt](https://design-system.pluralsight.com/)<br>Controls: 43 technical / advanced / lookd very crisp<br>Target: React<br>Note: components look really good! |
+| [Balena](https://github.com/balena-io-modules/rendition) | ★134 | Controls: 48 normal / standard, markdown / similar to Material Design<br>Targets: React with Storybook<br>Note: Excellent design, based on react, recompose, styled-components, and styled-systems. The widgets look a bit like material, but different enough to know that you are not using it |
 
 Tip: code coloring can be done by [Prism](https://prismjs.com/)
 
----------------------
-WARNING: information past this point is still in strong edit
+### Legend
 
-Things we need to note for each product:
-- sponsor company
-- home website
-- number of controls
-- classes {standard, advanced, charts, markdown}
-- tool integration {StoryBook, Figma, Sketch, etc}
-- targets {HTML, React, Vue, Angular}
-- tone: {formal, business, normal, technical}
-- integrations: how well does site support proper workflow
+Tone: (subjective)
+- formal : looks like a sheet of paper, "whiteish"
+- business : looks like site for a big company
+- normal : looks like a regular website, kind of neutral tone
+- technical : nerdy with lots of graphs and stuff
+
+Classes:
+- standard : the standard set of controls
+- advanced : has controls that are uncommon
+- charts : supports charts and graphs
+- markdown : supports a markdown
+
+---------------------
+** WARNING: information past this point is still being edited **
+
 
 --------------------
 ## CSS in JS
