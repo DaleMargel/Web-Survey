@@ -68,6 +68,11 @@ The following symbols are used in the tables:
 	1. Containers
 	2. Container Orchestration
 	3. Host Server
+9. People
+	1. Developit
+	2. WebReflection
+	3. [DiegoHaz](DiegoHaz.md)
+	4. [Daybrush](Daybrush.md)
 
 > While researching these topics I kept bumping in to works by [Jason Miller](https://github.com/developit), a fellow Canadian. I have adopted a lot of it and would like to thank him for sharing.
 
