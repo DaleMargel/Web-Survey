@@ -135,6 +135,8 @@ Handling of complex control hierarchies
 
 As your project gets bigger, managing the components and all of their subcomponents and dependencies becomes a chore. This might help.
 
+Stars updated 2020.07.24
+
 | Product | Stars | Description |
 | ------- | -----:| ----------- |
 | [Arc](https://github.com/diegohaz/arc)💗 | ★2.5k | React starter kit based on the [Atomic Design methodology](https://bradfrost.com/blog/post/atomic-web-design/) - see also [DiegoHaz](DiegoHaz.md) library |

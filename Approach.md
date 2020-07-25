@@ -82,6 +82,7 @@ Disadvantages:
 - Not as fast or capable as native code.
 - Web look & feel rather than native.
 - Code on client is not secure.
+- The web is really not that simple ...
 
 
 [Next> Technology Stack](TechStack.md)

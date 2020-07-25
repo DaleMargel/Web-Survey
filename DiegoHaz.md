@@ -7,7 +7,7 @@ Stars updated 2020.07.24
 
 | Package | Stars | Description |
 | ------- | -----:| ----------- |
-| [Arc](https://github.com/diegohaz/arc)💗 | ★2.5k| React front end starter kit based on the Atomic Design methodology, which is a nice technique for organizing controls. It uses React, [React-router](https://github.com/ReactTraining/react-router), Webpack, [Jest](https://facebook.github.io/jest) and optionally,   | [Redux](https://github.com/diegohaz/arc/tree/redux), and SSR |
+| [Arc](https://github.com/diegohaz/arc)💗 | ★2.5k| React front end starter kit based on the Atomic Design methodology, which is a nice technique for organizing controls. It uses React, [React-router](https://github.com/ReactTraining/react-router), Webpack, [Jest](https://facebook.github.io/jest), [Redux](https://github.com/diegohaz/arc/tree/redux), and SSR |
 | [Generact](https://github.com/diegohaz/generact) | ★1.4k | Tool for generating React components by replicating your own. Basically automated copy/paste. |
 | [Rest](https://github.com/diegohaz/rest) | ★1.4k | REST API generator with Node.js, Express and Mongoose. Suppoprts ES6! user login, social login, password reset, listing querystrings, unit tests, integration tests, coverage tests, continuous integration, documentation generator. The code is mostly 4 years old and it looks like the author has sort of abandoned it. |
 | [awesome react context](https://github.com/diegohaz/awesome-react-context) | ★824 | Curated list of stuff related to the new React Context API |

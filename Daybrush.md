@@ -1,7 +1,7 @@
 # Daybrush /EGJS
 Special Effects, Animations and Styling person of interest
 
-[Daybrush](https://daybrush.com/) is a korean developer that seems to have a nack for CSS. Seems to be an author within the [Naver/egjs](https://github.com/naver) group - which has a ton of **AWESOME** related goodies. The EGJS home is [here](https://github.com/naver/egjs).
+[Daybrush](https://daybrush.com/) is a Korean developer that seems to have a nack for CSS. Seems to be an author within the [Naver/egjs](https://github.com/naver) group - which has a ton of **AWESOME** related goodies. The EGJS home is [here](https://github.com/naver/egjs).
 
 Stars updated 2020.07.24
 

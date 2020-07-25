@@ -33,11 +33,9 @@ The following symbols are used in the tables:
 	3. [Repository](PlatformRepository.md)
 	4. [Language](PlatformLanguage.md)
 	5. [Rendering Engine](PlatformRendering.md)
-	6. [Visual Design](PlatformVisualDesign.md#design) 
-	7. [Widget Catalog](PlatformVisualDesign.md#catalog) 
-	8. [Widget Structure](PlatformVisualDesign.md#structure)
-	9. [Build Tools](PlatformBuild.md)
-	10. Accessibility / ARIA
+	6. [Visual Design](PlatformVisualDesign.md)
+	7. [Build Tools](PlatformBuild.md)
+	8. Accessibility / ARIA
 6. Quality
 	1. Code Linting
 	2. Unit Tests
