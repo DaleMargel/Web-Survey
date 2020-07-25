@@ -68,7 +68,7 @@ The following symbols are used in the tables:
 	3. Host Server
 9. People
 	1. Developit
-	2. WebReflection
+	2. [WebReflection](./People/WebReflection.md)
 	3. [DiegoHaz](./People/DiegoHaz.md)
 	4. [Daybrush](./People/Daybrush.md)
 

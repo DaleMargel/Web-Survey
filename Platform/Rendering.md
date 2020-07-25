@@ -12,10 +12,12 @@ Stars current as of 2020.07.22
 | [Vue](https://github.com/vuejs/vue) | ★168k | "a progressive framework for building user interfaces." |
 | [React](https://github.com/facebook/react) | ★153k | "A declarative, efficient, and flexible JavaScript library for building user interfaces." |
 | [Angular](https://github.com/angular/angular.js) | ★63.5k | "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages" |
-| [Svelte](https://github.com/sveltejs/svelte)⚑  | ★35.6k | "a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM"|
+| [Svelte](https://github.com/sveltejs/svelte)⚑  | ★35.6k | "a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM" |
 | [Preact](https://github.com/preactjs/preact)💗 | ★26.7k | A lighweight version of React |
 | [Polymer](https://github.com/Polymer/polymer) | ★21.4k| The most successful Web Component library (until it was killed by W3C) |
+| [Elm](https://github.com/elm)⚑ | ★333 | Home: [Elm](https://elm-lang.org/)<br>Compiles code written in Elm (a functional language) to vanilla javascript. Because it is written as it's own language, it has many innovative ideas that are impossible in a javascript-like language. Otherwise, it is similar to Svelte, but a strange syntax. |
 | [Heresy](https://github.com/WebReflection/heresy)💗 | ★218| "React-like Custom Elements via the V1 API built-in extends. Also available for SSR." |
+
 
 ## Vue
 By github stars, this is the most popular framework. It was released in 2014 as a lighter alternative to Angular. I must admit that I have no experience with it. It uses a combination of annotated html and declarative javascript to bind data to the web page. I understand that it is very popular in China, but not as much in North America.
@@ -30,7 +32,7 @@ React is powered by JSX, an XML-like extension to javascript. This allows javasc
 - It uses virtual DOM difference to optimise updates.
 - It tends to change its favoured approach from time to time.
 - It has its own events, not those of the browser.
-- It generates large run-time bundles.
+- It can generates large run-time bundles by default.
 
 The currently favoured approach is hooks. This is a brilliant way to decouple the user interface from the data. React offers a number of hooks but there are some [third party libraries](https://github.com/streamich/react-use) that take it to an extreme.
 
@@ -40,44 +42,39 @@ This was released in 2010 but underwent a major change in 2016. While not as pop
 ## Svelte
 This framework seems to come up a lot. It was released in 2016. It reads annotated xhtml with javascript and compiles it into a focused light-weight vanilla js web application. I have not used this, but it looks promising.
 
+## Elm
+Elm works similar to Svelte, but it uses a custom language with a lot of innovative features. Because it is unfamilar looking, it has a steeper learning curve and is not as popular as svelte.
+
 ## Preact
-Preact is a lightweight and faster version of React. It has no virtual DOM, it uses the browser events and it removes those lesser-used features that take up space. Because of this, it imposes a 3kb overhead compared to React's 136kb (minified). Preact also has a compatibility library that implements the missing React features if you need them.
+Preact is a lightweight and faster version of React. It has a light-weight virtual DOM, it uses the browser events and it removes those lesser-used features that take up space. Because of this, it imposes a 3kb overhead compared to React's 136kb (minified). Preact also has a compatibility library that implements the missing React features if you need them.
 
 If combined with [HTM](https://github.com/developit/htm) the code may run directly in the brower with no compile step. This is why I like it so much.
 
 ## Polymer
-This was Google's Web Component approach until the W3C decided not to support html imports. This was a key requirement of WC and it stopped the Polymer project in its tracks. In response:
+Web Components were a proposed standard to allow a developer to define their own HTML tags with custom behaviour and scoped styles. Polymer chose to define these components as web fragments containing embedded javascript. For this all to work it needed:
 
-- RIP Web Components.
-- A sub set, Custom Elements (et al) can be accessed through javascript.
-- The Polymer team wrote lit-html to work with Custom Elements
+- HTML Imports : loading html like a script
+- Custom Elements : ability to define custom tags and behaviours
+- Shadow DOM : ability to access hidden DOM inside of tags
+- HTML Templates : ability to define tags outside of DOM
 
-Polymer used to be my preferred approach until Web Components were killed by W3C. The Polymer team started working with lit-html, but I found that HyperHTML was already a more capable and mature replacement for lit-html so I moved over to [WebReflection](https://github.com/WebReflection). See below.
+Polymer depended heavily on HTML Imports so when it failed to become a W3C standard Polymer was stopped in its tracks. The work around was to import javascript files containing HTML rather than HTML files containing javascript. The Google team started writing [lit-html](https://lit-html.polymer-project.org/) to do this.
+
+Polymer seemed to lose a lot of momentum while it was writing lit-html. Many good libraries already existed for this and I don't know why the Polymer team did not just adopt one and move on.
+
+> Ironically, if you squint at lit-html (or heresy) it looks similar to React. These vendors are trying to solve the same problem: filling an annotated template with data.
 
 ## Heresy
-Heresy used to be the most recent in a long line of experiments by [WebReflection](https://github.com/WebReflection). I took this one for a serious test drive and really liked it. However, like a teenager with OCD, Andrea has since moved on and created several more (awesome) experiments. None of these sit long enough to accumulate a lot of github stars, but no matter. There is some amazing work here; his github page is like a developer candy store.
+Polymer used to be my preferred approach until Web Components were killed by W3C. The Polymer team started working with an aternative, lit-html, but I found that [HyperHTML](https://viperhtml.js.org/hyper.html) was already a more capable and mature replacement - so I moved over to [WebReflection](https://github.com/WebReflection) and never looked back.
 
-With over a dozen ways to write a web site, Andrea was kind enough to create a [selection guide](https://gist.github.com/WebReflection/761052d6dae7c8207d2fcba7cdede295). There is also a picker application that lets you choose the best option based on what features you want. Most of these support IE11 out of the box.
+The since then, Andrea created a succession of libraries to explore possible solutions. I tried [Heresy](https://github.com/WebReflection/heresy) and liked it. It is the best choice if you want custom elements, hooks, JSX-like tagged template literals, and optional SSR. It looks and handles much the same as Preact+HTM or React but uses a technology more similar to Polymer (custom elements), but is lighter weight (no shadow dom).
 
-From his own [web site](https://gist.github.com/WebReflection/761052d6dae7c8207d2fcba7cdede295). Stars current as of 2020.07.22/sorted.
+Heresy uses custom elements v1 which are widely supported. It even runs on problematic IE9, IE10, IE11, Safari and Web Kit browsers with a small polyfill. The library is light (26.9kb/min) and fast. Tags created by Heresy can be treated as regular HTML tags.
 
-| Product | Stars | Description |
-| ------- | -----:| ----------- |
-| [hyperHTML](https://github.com/WebReflection/hyperHTML) | ★2.7k | "HTML/SVG with no auto-keyed but optional manually keyed render" |
-| [lighterhtml](https://github.com/WebReflection/lighterhtml) | ★552  | "HTML/SVG auto-keyed and manual keyed render" |
-| [heresy/ssr](https://github.com/WebReflection/heresy) | ★218 | "lighterhtml + augmentor + Custom Elements" |
-| [neverland](https://github.com/WebReflection/neverland) | ★199 | "lighterhtml + dom-augmentor" |
-| [wikedElements](https://github.com/WebReflection/wicked-elements)| ★189 | "custom elements without custom elements ... *wait, what?*" |
-| [HyperHTMLElement](https://github.com/WebReflection/hyperHTML-Element) | ★162 | "custom elements via hyperHTML" |
-| [µhtml](https://github.com/WebReflection/uhtml) | ★154 | "HTML/SVG auto-keyed and manual keyed render" |
-| [augmentor](https://github.com/WebReflection/augmentor) | ★91 | "augmentor (hooks for anything)" |
-| [µce](https://github.com/WebReflection/uce) | ★52 | "Custom Elements via µhtml" |
-| [dom-augmentor](https://github.com/WebReflection/dom-augmentor)| ★49 | "augmentor with DOM auto-hooked useEffect" |
-| [hookedElements](https://github.com/WebReflection/hooked-elements) | ★26 | "wickedElements + augmentor" |
-
-Heresy is still the best choice if you want custom elements, hooks, JSX-like tagged template literals, and optional SSR. It looks and handles much the same as Preact+HTM or React for that matter. There are also a dozen other libraries here and one of them is sure to be exactly what you are looking for.
+If you want a different approach there are also a dozen other libraries listed. One of them is sure to be exactly what you are looking for. See the [WebReflection](../People/WebReflection.md) section of this document for details.
 
 ## DOM Diffing
+
 Updating the DOM is time-consuming so many frameworks keep track of what has changed and only update that part of the screen. The main difference between React, Preact and Heresy is the approach to tracking these changes.
 
 - React maintains a virtual DOM, a sort of copy of how the screen should look. It compares the virtual DOM with the current one to determine what has changed. This can take time and a lot of memory.
@@ -86,9 +83,18 @@ Updating the DOM is time-consuming so many frameworks keep track of what has cha
 
 - Heresy takes advantage of tagged template literals. The only DOM elements that can change are those bits represented by the "holes". This lets heresy make the DOM diffing extremely light and blazingly fast without the need for a virtual DOM.
 
-## Weapon Choice
+## The Future
+Frameworks were invented to work around the limitations of older web browsers. With the capabilities of modern web, many have questioned whether we still need frameworks at all. 
+
+React, Angular, Vue are all frameworks that in some way are solving yesterday's problems. They assist in creating proprietary components and must transform the code to do this. 
+
+Polymer and Heresy are libraries and technically superior. They create components that are native to the web browser. The code does not need to be transformed. The library is only there to automate some of the boilerplate work and is not always needed.
+
+Which approact wins? React, Angular, Vue has huge momentum and a lot of support / tooling. People test to stick with what they find familiar. My guess is that the React group will stay more popular for years to come.
+
+## Weapon of Choice
 - React - If you want a conventional development experience.
-- Heresy (or siblings) - If you want to walk on the wild side.
+- Heresy (or sibling) - If you want to walk on the wild side.
 - Preact+HTM - if you want a compromise between the two.
 
 I choose Preact+HTM in order to have a lightweight environment that can (in theory) leverage many of the tools built for React. I also plan on giving Heresy (or sibling) another try once I have sorted out which one(s) to use.

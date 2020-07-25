@@ -34,9 +34,9 @@ What operating system is used on the destop / laptop for development?
 
 | Aspect | Description |
 | ------ | ----------- |
-| MacOS | I have no experience with Apple products. |
+| MacOS | I have no experience with Apple products. Until recently Apple had a reputation for not supporting advanced HTML features (e.g. Custom Elements). Do you really want to do web development on a machine with a crippled web browser?  |
 | Windows | Unless you are using Visual Studio / C#, Windows seems to make development more difficult in a million small ways. |
-| Linux💗 | I honestly love using MX Linux (a Debian derivative) for development. It is free and runs well on an 8 year old recycled laptop. If your server also runs Linux, the experience is smooth and seamless. |
+| Linux💗 | I honestly love using MX Linux (a Debian derivative) for development. It is free and runs well on an 8 year old recycled laptop. If your server also runs Linux, the experience is smooth and seamless. Just about any Linux will do. |
 
 I guess it is really just a matter of taste.
 
