@@ -141,4 +141,4 @@ Stars updated 2020.07.24
 | ------- | -----:| ----------- |
 | [Arc](https://github.com/diegohaz/arc)💗 | ★2.5k | React starter kit based on the [Atomic Design methodology](https://bradfrost.com/blog/post/atomic-web-design/) - see also [DiegoHaz](DiegoHaz.md) library |
 
-[Next> Platform / Build Tools](PlatformBuild.md)
+[Next> Platform / Build Tools](Build.md)

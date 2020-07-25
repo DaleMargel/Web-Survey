@@ -27,4 +27,4 @@ My preferred IDE is Visual Studio Code.
 
 I also recommend Eclipse, but most of these IDE's are quite good.
 
-[Next> Platform / Repository](PlatformRepository.md) 
+[Next> Platform / Repository](Repository.md) 

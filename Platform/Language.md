@@ -43,4 +43,4 @@ I have no strong opinion here. Typescript brings type safety to javascript but m
 
 For now, we will assume javascript.
 
-[Next> Platform / Rendering Engine](PlatformRendering.md)
+[Next> Platform / Rendering Engine](Rendering.md)

@@ -6,15 +6,13 @@ The technology and structure of the application.
 
 | Aspect | Description |
 | ------ | ----------- |
-| [Team Dogma](PlatformDogma.md) | Things that should not matter - but do |
-| [IDE](PlatformIDE.md) | The Integrated Development Environment used to write code  |
-| [Repository](PlatformRepository.md) | A service to store and version code |
-| [Language](PlatformLanguage.md) | What version of javascript to use |
-| [Rendering Engine](PlatformRendering.md) | Render web page with data |
-| [Visual Design](PlatformVisualDesign.md#design) | Styling of controls |
-| [Widget Catalog](PlatformVisualDesign.md#catalog) | Library and showcase for controls |
-| [Widget Structure](PlatformVisualDesign.md#structure) | Handling of complex control hierarchies |
-| [Build Tools](PlatformBuild.md)| How to build your system. |
+| [Team Dogma](./Platform/TeamDogma.md) | Things that should not matter - but do |
+| [IDE](./Platform/IDE.md) | The Integrated Development Environment used to write code  |
+| [Repository](./Platform/Repository.md) | A service to store and version code |
+| [Language](./Platform/Language.md) | What version of javascript to use |
+| [Rendering Engine](./Platform/Rendering.md) | Render web page with data |
+| [Visual Design](./Platform/VisualDesign.md#design) | Styling of controls |
+| [Build Tools](./Platform/Build.md)| How to build your system. |
 
 
 ## Quality
@@ -64,4 +62,4 @@ Packaging and hosting the application
 | Orchestration | Coordinate containers |
 | Server | The server that runs it all |
 
-[Next> Platform / Team Dogma](PlatformDogma.md)
+[Next> Platform / Team Dogma](./Platform/TeamDogma.md)

@@ -28,13 +28,13 @@ The following symbols are used in the tables:
 3. [Technology Stack](TechStack.md)
 4. [Anatomy of a Web Application](Anatomy.md)
 5. Client Platform
-    1. [Team Dogma](PlatformDogma.md)
-	2. [IDE](PlatformIDE.md)
-	3. [Repository](PlatformRepository.md)
-	4. [Language](PlatformLanguage.md)
-	5. [Rendering Engine](PlatformRendering.md)
-	6. [Visual Design](PlatformVisualDesign.md)
-	7. [Build Tools](PlatformBuild.md)
+    1. [Team Dogma](./Platform/TeamDogma.md)
+	2. [IDE](./Platform/IDE.md)
+	3. [Repository](./Platform/Repository.md)
+	4. [Language](./Platform/Language.md)
+	5. [Rendering Engine](./Platform/Rendering.md)
+	6. [Visual Design](./Platform/VisualDesign.md)
+	7. [Build Tools](./Platform/Build.md)
 	8. Accessibility / ARIA
 6. Quality
 	1. Code Linting
@@ -69,8 +69,8 @@ The following symbols are used in the tables:
 9. People
 	1. Developit
 	2. WebReflection
-	3. [DiegoHaz](DiegoHaz.md)
-	4. [Daybrush](Daybrush.md)
+	3. [DiegoHaz](./People/DiegoHaz.md)
+	4. [Daybrush](./People/Daybrush.md)
 
 > While researching these topics I kept bumping in to works by [Jason Miller](https://github.com/developit), a fellow Canadian. I have adopted a lot of it and would like to thank him for sharing.
 

@@ -93,4 +93,4 @@ Updating the DOM is time-consuming so many frameworks keep track of what has cha
 
 I choose Preact+HTM in order to have a lightweight environment that can (in theory) leverage many of the tools built for React. I also plan on giving Heresy (or sibling) another try once I have sorted out which one(s) to use.
 
-[Next> Platform / Visual Design](PlatformVisualDesign.md#design)
+[Next> Platform / Visual Design](VisualDesign.md#design)

@@ -81,4 +81,4 @@ While many marketing departments and managers might want to support all browsers
 
 The music industry has ceased supporting 8-tracks a long time ago. Movies are no longer released on VHS. Nobody bothers with CRT displays nor backing up data to tape cartriges or CD ROM's. We should not use nor support dead technology. As a developer, [just say NO!](https://death-to-ie11.com/) - if you can.
 
-[Next> Platform / IDE](PlatformIDE.md)
+[Next> Platform / IDE](IDE.md)

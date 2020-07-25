@@ -4,4 +4,4 @@ A respoitory stores and versions code. The leader here is [GitHub](https://githu
 
 Since Visual Studio Code has built-in Git support, we will use GitHub. Any of the other GIT solutions would also be fine.
 
-[Next> Platform / Language](PlatformLanguage.md)
+[Next> Platform / Language](Language.md)
