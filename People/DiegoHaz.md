@@ -1,7 +1,7 @@
 # DiegoHaz
 React and Styling person of interest
 
-[diegohaz](https://github.com/diegohaz) is a Brazilian developer who seems to have some really excellent REACT githubs that deserve more stars. Of Note, he seems to like [styled-components](https://github.com/styled-components/styled-components) (see CSS in JS section) which is the most popular way of formatting CSS.
+[diegohaz](https://github.com/diegohaz) is a Brazilian developer who seems to have some really excellent React / starter kit githubs that deserve more stars. Of Note, he seems to focus on [styled-components](https://github.com/styled-components/styled-components) (see CSS in JS section) which is the most popular way of formatting CSS.
 
 Stars updated 2020.07.24
 

@@ -82,6 +82,19 @@ Updating the DOM is time-consuming so many frameworks keep track of what has cha
 
 - Heresy takes advantage of tagged template literals. The only DOM elements that can change are those bits represented by the "holes". This lets heresy make the DOM diffing extremely light and blazingly fast without the need for a virtual DOM.
 
+## Managing Control Hierarchies
+As applications get bigger so do the number of controls. Managing these can become quite difficult.
+
+One approach is [Atomic Design](https://atomicdesign.bradfrost.com/) which is an idea (and Book) by Brad Frost. It recommends breaking up the contols folder into 5 folders - based on level in hierarchy. 
+
+1. basic styled html controls. 
+2. aggregates above to have a purpose (e.g. search, login).
+3. aggregates above to a unit of work (e.g. header, catalog, photos).
+4. aggregates above into page layouts for different screens sizes.
+5. aggregates above into specific page (e.g. landing, settings, payment).
+
+[DiegoHaz](../People/DiegoHaz.md) - [Arc](https://github.com/diegohaz/arc) is a React starter kit that helps you get started in that direction.
+
 ## Weapon of Choice
 - React - If you want a conventional development experience.
 - Heresy (or sibling) - If you want to walk on the wild side.

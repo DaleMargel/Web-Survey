@@ -1,11 +1,11 @@
 # WebReflection
 Templating Library person of interest
 
-Andrea Giammarchi is a German who owns [WebReflection](https://github.com/WebReflection) - a rambling GitHub with 388 repositories, most of them his own code and brimming with great ideas. There is some amazing work here; his github page is like a developer candy store. I recommend this as a github tourist destination.
+Andrea Giammarchi is a German developer who owns [WebReflection](https://github.com/WebReflection) - a rambling GitHub with 388 repositories, most of them his own code and brimming with great ideas. There is some amazing work here. I recommend this as a github tourist destination.
 
 I started using his code when Polymer was delayed writing lit-html and Andrea had a mature, ready-to-go version of it (hyperHtml) just sitting there in his repository. Unfortunately, he did not stop there.
 
-With now over a dozen ways to write a web site, Andrea was kind enough to create a [selection guide](https://gist.github.com/WebReflection/761052d6dae7c8207d2fcba7cdede295). There is also a picker application that lets you choose the best option based on what features you want. Many of these support IE11 out of the box.
+With now over a dozen ways to write a web site, Andrea was kind enough to create a [selection guide](https://gist.github.com/WebReflection/761052d6dae7c8207d2fcba7cdede295). There is also a picker application that lets you choose the best option based on what features you want. Many of these support IE11 out of the box, or nearly so.
 
 This list is from his own [web site](https://gist.github.com/WebReflection/761052d6dae7c8207d2fcba7cdede295), some projects were not listed.<br>
 Stars current as of 2020.07.22/sorted.
