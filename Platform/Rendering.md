@@ -15,9 +15,8 @@ Stars current as of 2020.07.22
 | [Svelte](https://github.com/sveltejs/svelte)⚑  | ★35.6k | "a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM" |
 | [Preact](https://github.com/preactjs/preact)💗 | ★26.7k | A lighweight version of React |
 | [Polymer](https://github.com/Polymer/polymer) | ★21.4k| The most successful Web Component library (until it was killed by W3C) |
-| [Elm](https://github.com/elm)⚑ | ★333 | Home: [Elm](https://elm-lang.org/)<br>Compiles code written in Elm (a functional language) to vanilla javascript. Because it is written as it's own language, it has many innovative ideas that are impossible in a javascript-like language. Otherwise, it is similar to Svelte, but a strange syntax. |
+| [Elm](https://github.com/elm)⚑ |  | Home: [Elm](https://elm-lang.org/)<br>Compiles code written in Elm (a functional language) to vanilla javascript. Because it is written as it's own language, it has many innovative ideas that are impossible in a javascript-like language. Otherwise, it is similar to Svelte, but has a strange syntax. |
 | [Heresy](https://github.com/WebReflection/heresy)💗 | ★218| "React-like Custom Elements via the V1 API built-in extends. Also available for SSR." |
-
 
 ## Vue
 By github stars, this is the most popular framework. It was released in 2014 as a lighter alternative to Angular. I must admit that I have no experience with it. It uses a combination of annotated html and declarative javascript to bind data to the web page. I understand that it is very popular in China, but not as much in North America.
@@ -25,7 +24,7 @@ By github stars, this is the most popular framework. It was released in 2014 as 
 ## React
 By media reports, this is the most popular framework by far. It is certainly the best supported. It has been around since 2013.
 
-React is powered by JSX, an XML-like extension to javascript. This allows javascript and html to be intermixed with wild abandon. As hugely popular as it is, it does have a few quirks:
+React is powered by JSX, an XML-like extension to javascript. This allows javascript and pseudo-html to be intermixed with wild abandon. As hugely popular as it is, it does have a few quirks:
 
 - It uses JSX, which requires a build step to convert to javascript.
 - It seems to prefer targeting ES5.
@@ -46,7 +45,7 @@ This framework seems to come up a lot. It was released in 2016. It reads annotat
 Elm works similar to Svelte, but it uses a custom language with a lot of innovative features. Because it is unfamilar looking, it has a steeper learning curve and is not as popular as svelte.
 
 ## Preact
-Preact is a lightweight and faster version of React. It has a light-weight virtual DOM, it uses the browser events and it removes those lesser-used features that take up space. Because of this, it imposes a 3kb overhead compared to React's 136kb (minified). Preact also has a compatibility library that implements the missing React features if you need them.
+Preact is a lightweight and faster version of React. It has a light-weight virtual DOM, it uses the browser events and it removes those lesser-used features that take up space. Because of this, it imposes a 3kb overhead compared to React's 136kb. Preact also has a React-compatibility library that implements the missing React features if you need them.
 
 If combined with [HTM](https://github.com/developit/htm) the code may run directly in the brower with no compile step. This is why I like it so much.
 
@@ -82,15 +81,6 @@ Updating the DOM is time-consuming so many frameworks keep track of what has cha
 - Preact works in a similar manner as React, but the code was written to be fast and light [(see video)](https://www.youtube.com/watch?v=LY6y3HbDVmg&feature=youtu.be). 
 
 - Heresy takes advantage of tagged template literals. The only DOM elements that can change are those bits represented by the "holes". This lets heresy make the DOM diffing extremely light and blazingly fast without the need for a virtual DOM.
-
-## The Future
-Frameworks were invented to work around the limitations of older web browsers. With the capabilities of modern web, many have questioned whether we still need frameworks at all. 
-
-React, Angular, Vue are all frameworks that in some way are solving yesterday's problems. They assist in creating proprietary components and must transform the code to do this. 
-
-Polymer and Heresy are libraries and technically superior. They create components that are native to the web browser. The code does not need to be transformed. The library is only there to automate some of the boilerplate work and is not always needed.
-
-Which approact wins? React, Angular, Vue has huge momentum and a lot of support / tooling. People test to stick with what they find familiar. My guess is that the React group will stay more popular for years to come.
 
 ## Weapon of Choice
 - React - If you want a conventional development experience.
