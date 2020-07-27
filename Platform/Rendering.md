@@ -46,9 +46,9 @@ This framework seems to come up a lot. It was released in 2016. It reads annotat
 ## Preact
 Preact is a lightweight and faster version of React. It has a light-weight virtual DOM, it uses the browser events and it removes those lesser-used features that take up space. Because of this, it imposes a 3kb overhead compared to React's 136kb. Preact also has a React-compatibility library that implements the missing React features if you need them.
 
-Preact makes no secret about using hyperscript; it even exports the `h()` function so you can use it directly. It gives you the option of using a built tool to support JSX if you want to use Preact like it was React.
+Preact makes no secret about using hyperscript under the hood to compose the page. it even exports the `h()` function so you can use it directly. It also gives you the option of using a built tool to support JSX if you want to use Preact like it was React.
 
-However if combined with [HTM](https://github.com/developit/htm), interesting things happen. Htm uses tagged template literals (TTL) in much the same way as JSX, but because TTL is part of javascript the code may run directly in the brower. No compile step is needed. This is why I like it so much. It is likely that something similar exists in React, but HTM was written by the same author as Preact, so you can be more comfortable that it will work.
+If Preact is combined with [HTM](https://github.com/developit/htm), interesting things happen. Htm uses tagged template literals (TTL) in much the same way as JSX, but because TTL is part of javascript the code may run directly in the brower. No compile step is needed. This is why I like it so much. It is likely that something similar exists in React, but HTM was written by the same author as Preact, so you can be more comfortable that it will work.
 
 ## Polymer
 Web Components were a proposed standard to allow a developer to define their own HTML tags with custom behaviour and scoped styles. Polymer chose to define these components as web fragments containing embedded javascript. For this all to work it needed:
@@ -105,11 +105,9 @@ Much of this depends on what is being rendered where.
 | CSR | Client Side Rendering : the server sends javascript to the client which is then used to render a web page. This is responsive but it can be big and slow. |
 | SSR | Server Side Rendering : the server renders the javascript into HTML then sends the HTML to the client for rendering. This can be much faster than CSR if the content is relatively static. |
 | Mixed | The landing page is SSR but the other pages are CSR. This gives a fast start up without too much loss of reactivity |
-| SSG | Server Side Generated : the server renders some javascript as HTML but converts others to script to be run on the client. Any page may have a combination of these. This is the best solution and lets the developer decide how best to render. |
+| PH | Partial Hydration : the server renders some javascript as HTML but writes others into scripts tags to be run on the client. Any page may have a combination of these. This is the best solution and lets the developer decide how best to render. |
 
-[Server Side Generation](https://medium.com/@luke_schmuke/how-we-achieved-the-best-web-performance-with-partial-hydration-20fab9c808d5) best if you can do it. While relatively new but I expect it to become a preferred technique over the next few years. See also [this article](https://markus.oberlehner.net/blog/building-partially-hydrated-progressively-enhanced-static-websites-with-isomorphic-preact-and-eleventy/#demo-and-full-code).
-
-An added advantage od SSG is the potential for supporting all browsers. If a feature fails to render on the client, it can render it on the server and send it to the client. 
+[Partial Hydration](https://medium.com/@luke_schmuke/how-we-achieved-the-best-web-performance-with-partial-hydration-20fab9c808d5) best if you can do it. While relatively new but I expect it to become a preferred technique over the next few years. See also [this article](https://markus.oberlehner.net/blog/building-partially-hydrated-progressively-enhanced-static-websites-with-isomorphic-preact-and-eleventy/#demo-and-full-code). An added advantage of PH is the potential for supporting all browsers. If a feature fails it falls back to SSR which should at least render the component.
 
 
 ## DOM Diffing
@@ -135,7 +133,11 @@ One approach is [Atomic Design](https://atomicdesign.bradfrost.com/) which is an
 4. aggregates above into page layouts for different screens sizes.
 5. aggregates above into specific page (e.g. landing, settings, payment).
 
-[DiegoHaz](../People/DiegoHaz.md) - [Arc](https://github.com/diegohaz/arc) is a React starter kit that helps you get started in that direction.
+Stars updated 2020.07.24
+
+| Product | Stars | Description |
+| ------- | -----:| ----------- |
+| [Arc](https://github.com/diegohaz/arc)💗 | ★2.5k | React starter kit based on the [Atomic Design methodology](https://bradfrost.com/blog/post/atomic-web-design/) - see also [DiegoHaz](DiegoHaz.md) library |
 
 
 
