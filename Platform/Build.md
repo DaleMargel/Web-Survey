@@ -18,13 +18,12 @@ Stars updated on 2020.07.20.
 | [Zwitterion](https://github.com/lastmjs/zwitterion)💗 | ★489 | This is web dev server that lets you import anything to the browser: JavaScript ES2015+, TypeScript, JSON, JSX, TSX, AssemblyScript, Rust, C, C++, WebAssembly, and in the future anything that compiles to JavaScript or WebAssembly. Normally you have to run webpack to transpile these into something the browser understands. Zwitterion does the conversion automatically. To create a static build for production, run Zwitterion with the `--build-static` option. Under the hood it appears to use the `node.http` as the base server and calls webpack as needed. |
 | [Preppy](https://github.com/sebastian-software/preppy) | ★22 | "A simple and lightweight tool for preparing the publish of NPM packages. Creates multiple output formats (ESM, CommonJS, UMD, ...)" |
 
+## Why transpiling and bundling are not always necessary:
 Transpiling adds complexity to a project - but in a large project it might be necessary. This [article](https://jasonformat.com/enabling-modern-js-on-npm/) explains the whole situation and quotes: 
 
 > "the dependencies we install from npm are stuck in 2014 - and therefore we need to package things..."
 
 The author thinks that the whole npm/package infrastructure is broken. He is also the creator of "preact" and "htm", so he seems to prefer things be lightweight. I agree.
-
-## Why transpiling and bundling are not always necessary:
 
 - As of mid 2020, Node.js supports ESM modules (at least experimentally). Previously a bundler was needed to gather all NPM (CJS) modules and write them to a format that the browser could use. Read this [Modules Introduction](https://javascript.info/modules-intro) for a bit of context.
 

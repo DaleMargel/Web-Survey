@@ -1,5 +1,5 @@
 # WebReflection
-Templating Library person of interest
+Rendering Engine person of interest
 
 Andrea Giammarchi is a German developer who owns [WebReflection](https://github.com/WebReflection) - a rambling GitHub with 388 repositories, most of them his own code and brimming with great ideas. There is some amazing work here. I recommend this as a github tourist destination.
 

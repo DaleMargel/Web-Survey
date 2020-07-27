@@ -1,5 +1,5 @@
 # Daybrush /EGJS
-Special Effects, Animations and Styling person of interest
+Templating Library person of interest
 
 [Daybrush](https://daybrush.com/) is owned by a  Korean developer named Younkue Choi. He seems to have a nack for CSS. He is an author within the [Naver/egjs](https://github.com/naver) group - which has a ton of **AWESOME** related goodies. The EGJS home is [here](https://github.com/naver/egjs).
 

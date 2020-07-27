@@ -35,19 +35,20 @@ React is powered by JSX, an XML-like extension to javascript. This allows javasc
 
 The currently favoured approach is hooks. This is a brilliant way to decouple the user interface from the data. React offers a number of hooks but there are some [third party libraries](https://github.com/streamich/react-use) that take it to an extreme.
 
+Technically speaking, React does not need to use JSX and therefore does not need to be "built". During build, JSX is comverted to `React.createElement()`. If you are willing to call this directly (or some shorter alias like hyperscript), the code will run directly without the need for building. JSX just makes it easier, and if you are using a transpiler, there is no reason not to use it.
+
 ## Angular
 This was released in 2010 but underwent a major change in 2016. While not as popular as React and Vue, it is popular with big companies and therefore there are a lot of jobs for Angular programmers. It presents a more structured MVC programming model that has a higher learning curve than the others. It also uses Typescript and needs to be compiled to javascript. It generates the largest bundles of the tools listed here.
 
 ## Svelte
 This framework seems to come up a lot. It was released in 2016. It reads annotated xhtml with javascript and compiles it into a focused light-weight vanilla js web application. I have not used this, but it looks promising.
 
-## Elm
-Elm works similar to Svelte, but it uses a custom language with a lot of innovative features. Because it is unfamilar looking, it has a steeper learning curve and is not as popular as svelte.
-
 ## Preact
 Preact is a lightweight and faster version of React. It has a light-weight virtual DOM, it uses the browser events and it removes those lesser-used features that take up space. Because of this, it imposes a 3kb overhead compared to React's 136kb. Preact also has a React-compatibility library that implements the missing React features if you need them.
 
-If combined with [HTM](https://github.com/developit/htm) the code may run directly in the brower with no compile step. This is why I like it so much.
+Preact makes no secret about using hyperscript; it even exports the `h()` function so you can use it directly. It gives you the option of using a built tool to support JSX if you want to use Preact like it was React.
+
+However if combined with [HTM](https://github.com/developit/htm), interesting things happen. Htm uses tagged template literals (TTL) in much the same way as JSX, but because TTL is part of javascript the code may run directly in the brower. No compile step is needed. This is why I like it so much. It is likely that something similar exists in React, but HTM was written by the same author as Preact, so you can be more comfortable that it will work.
 
 ## Polymer
 Web Components were a proposed standard to allow a developer to define their own HTML tags with custom behaviour and scoped styles. Polymer chose to define these components as web fragments containing embedded javascript. For this all to work it needed:
@@ -63,6 +64,10 @@ Polymer seemed to lose a lot of momentum while it was writing lit-html. Many goo
 
 > Ironically, if you squint at lit-html (or heresy) it looks similar to React. These vendors are trying to solve the same problem: filling an annotated template with data.
 
+## Elm
+Elm works similar to Svelte, but it uses a custom language with a lot of innovative features. Because it is unfamilar looking, it has a steeper learning curve and is not as popular as svelte.
+
+
 ## Heresy
 Polymer used to be my preferred approach until Web Components were killed by W3C. The Polymer team started working with an aternative, lit-html, but I found that [HyperHTML](https://viperhtml.js.org/hyper.html) was already a more capable and mature replacement - so I moved over to [WebReflection](https://github.com/WebReflection) and never looked back.
 
@@ -71,6 +76,41 @@ The since then, Andrea created a succession of libraries to explore possible sol
 Heresy uses custom elements v1 which are widely supported. It even runs on problematic IE9, IE10, IE11, Safari and Web Kit browsers with a small polyfill. The library is light (26.9kb/min) and fast. Tags created by Heresy can be treated as regular HTML tags.
 
 If you want a different approach there are also a dozen other libraries listed. One of them is sure to be exactly what you are looking for. See the [WebReflection](../People/WebReflection.md) section of this document for details.
+
+## Weapon of Choice
+My take:
+- React - If you want a conventional development experience.
+- Heresy (or sibling) - If you want to walk on the wild side.
+- Preact+HTM - if you want a compromise between the two.
+
+I choose Preact+HTM in order to have a lightweight environment that can (in theory) leverage many of the tools built for React. I also plan on giving Heresy (or sibling) another try once I have sorted out which one(s) to use.
+
+# Rendering
+
+HTML has a few advantages compared to javascript
+- it is much smaller than the equivalent javascript
+- html web sites display more quickly than javascripted ones
+- it can be read by crawlers and help out SEO ratings
+
+At the same time, javascript makes it easier to constuct large hierarchies of responsive controls.
+
+How do we get the best of both worlds?
+
+## Server Rendering
+Much of this depends on what is being rendered where.
+
+| Approach | Description |
+| -------- | ----------- |
+| Classic | Static HTML pages are sent from the server to the client. This is the fastest solution for static content. |
+| CSR | Client Side Rendering : the server sends javascript to the client which is then used to render a web page. This is responsive but it can be big and slow. |
+| SSR | Server Side Rendering : the server renders the javascript into HTML then sends the HTML to the client for rendering. This can be much faster than CSR if the content is relatively static. |
+| Mixed | The landing page is SSR but the other pages are CSR. This gives a fast start up without too much loss of reactivity |
+| SSG | Server Side Generated : the server renders some javascript as HTML but converts others to script to be run on the client. Any page may have a combination of these. This is the best solution and lets the developer decide how best to render. |
+
+[Server Side Generation](https://medium.com/@luke_schmuke/how-we-achieved-the-best-web-performance-with-partial-hydration-20fab9c808d5) best if you can do it. While relatively new but I expect it to become a preferred technique over the next few years. See also [this article](https://markus.oberlehner.net/blog/building-partially-hydrated-progressively-enhanced-static-websites-with-isomorphic-preact-and-eleventy/#demo-and-full-code).
+
+An added advantage od SSG is the potential for supporting all browsers. If a feature fails to render on the client, it can render it on the server and send it to the client. 
+
 
 ## DOM Diffing
 
@@ -81,6 +121,8 @@ Updating the DOM is time-consuming so many frameworks keep track of what has cha
 - Preact works in a similar manner as React, but the code was written to be fast and light [(see video)](https://www.youtube.com/watch?v=LY6y3HbDVmg&feature=youtu.be). 
 
 - Heresy takes advantage of tagged template literals. The only DOM elements that can change are those bits represented by the "holes". This lets heresy make the DOM diffing extremely light and blazingly fast without the need for a virtual DOM.
+
+I like the Heresy approach, but Preact still has the smallest size.
 
 ## Managing Control Hierarchies
 As applications get bigger so do the number of controls. Managing these can become quite difficult.
@@ -95,11 +137,6 @@ One approach is [Atomic Design](https://atomicdesign.bradfrost.com/) which is an
 
 [DiegoHaz](../People/DiegoHaz.md) - [Arc](https://github.com/diegohaz/arc) is a React starter kit that helps you get started in that direction.
 
-## Weapon of Choice
-- React - If you want a conventional development experience.
-- Heresy (or sibling) - If you want to walk on the wild side.
-- Preact+HTM - if you want a compromise between the two.
 
-I choose Preact+HTM in order to have a lightweight environment that can (in theory) leverage many of the tools built for React. I also plan on giving Heresy (or sibling) another try once I have sorted out which one(s) to use.
 
 [Next> Platform / Visual Design](VisualDesign.md#design)
