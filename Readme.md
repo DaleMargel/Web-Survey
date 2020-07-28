@@ -24,10 +24,11 @@ The following symbols are used in the tables:
 
 ## Table of contents
 1. [Wish List](WishList.md)
-2. [Approach](Approach.md)
-3. [Technology Stack](TechStack.md)
-4. [Anatomy of a Web Application](Anatomy.md)
-5. Client Platform
+2. Application Design
+	1. [Approach](Approach.md)
+	2. [Technology Stack](TechStack.md)
+	3. [Anatomy of a Web Application](Anatomy.md)
+3. Client Platform
     1. [Team Dogma](./Platform/TeamDogma.md)
 	2. [IDE](./Platform/IDE.md)
 	3. [Repository](./Platform/Repository.md)
@@ -36,42 +37,40 @@ The following symbols are used in the tables:
 	6. [Visual Design](./Platform/VisualDesign.md)
 	7. [Build Tools](./Platform/Build.md)
 	8. Accessibility / ARIA
-6. Quality
-	1. Code Linting
-	2. Unit Tests
-	3. Integration Tests
-	5. End-to-End Tests
-	4. Code Coverage
-	6. SPA Compliance
-	7. Code Size
-	8. Profiling
-	9. Legacy Support
-	10. Server Side Rendering
-7. Server
-	1. Server Interface
-	2. Database
-	3. Reverse Proxy
-	4. Authentication
-	5. External Login
-	6. Authorization
-	7. Secure Socket
-	8. CORS Support
-	9. Logging
-	10. Log Browser
-	11. Load Balancer
-	12. Rate Limiting
-	13. Analytics
-	14. SEO
-8. Deployment
-	1. Containers
-	2. Container Orchestration
-	3. Host Server
-9. People
+4. [Quality](./Quality/Quality.md)
+	1. [Linting](./Quality/Quality.md#linting)
+	2. [Unit Test](./Quality/Quality.md#unit-test)
+	3. [Integration Test](./Quality/Quality.md#integration-test)
+	5. [End-to-End Test](./Quality/Quality.md#end-to-end-test)
+	4. [Code Coverage](./Quality/Quality.md#code-coverage)
+	6. [SPA Compliance](./Quality/Quality.md#spa-compliance)
+	7. [Code Size](./Quality/Quality.md#code-size)
+	8. [Profiling](./Quality/Quality.md#porofiling)
+	9. [Legacy Support](./Quality/Quality.md#legacy-support)
+	10. [Server Side Rendering](./Quality/Quality.md@server-side-rendering)
+5. [Server](./Server/Server.md)
+	1. [Server Interface](./Server.md#server-interface)
+	2. [Database](./Server.md#database)
+	3. [Reverse Proxy](./Server.md#reverse-proxy)
+	4. [Authentication](./Server.md#authentication)
+	5. [External Login](./Server.md#external-login)
+	6. [Authorization](./Server.md#authorization)
+	7. [Secure Socket](./Server.md#secure-socket)
+	8. [CORS Support](./Server.md#xors-support)
+	9. [Logging](./Server.md#logging)
+	10. [Load Balancer](./Server.md#load-balancer)
+	11. [Rate Limiting](./Server.md#rate-limiting)
+	12. [Analytics](./Server.md#analytics)
+	13. [SEO](./Server.md#seo)
+6. [Deployment](./Deployment/Deployment.md)
+	1. [Containers](./Deployment/Deployment.md#containers)
+	2. [Host Server](./Deployment/Deployment.md#host-server)
+7. People
 	1. [Developit](./People/DevelopIt.md)
 	2. [WebReflection](./People/WebReflection.md)
 	3. [DiegoHaz](./People/DiegoHaz.md)
 	4. [Daybrush](./People/Daybrush.md)
+9. Technology
+	1. [Thiea](./Technology/Thiea.md)
 
-> While researching these topics I kept bumping in to works by [Jason Miller](https://github.com/developit), a fellow Canadian. I have adopted a lot of it and would like to thank him for sharing.
-
-[Next> WishList](WishList.md)
+[Next> Design WishList](./Design/WishList.md)

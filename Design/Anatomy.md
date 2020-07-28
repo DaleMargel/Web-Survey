@@ -62,4 +62,4 @@ Packaging and hosting the application
 | Orchestration | Coordinate containers |
 | Server | The server that runs it all |
 
-[Next> Platform / Team Dogma](./Platform/TeamDogma.md)
+[Next> Platform / Team Dogma](../Platform/TeamDogma.md)

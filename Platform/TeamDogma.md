@@ -60,11 +60,11 @@ The music industry has ceased supporting 8-tracks a long time ago. Movies are no
 ## Big Project Syndrome
 Is the project really a big project? 
 
-Any small project can become a big project if it is treated as such. With a big project comes big overhead: more management, more developers, more code, more expense and a bigger chance of failure.
+Any small project can become a big project if it is treated as such. With a big project comes bmore overhead: more management, more developers, more code, more expense and a more likely failure.
 
 Why do we do this? There are a lot of reasons: perverse incentives, cargo cult and herd mentality are a few. There are many good writers that have explored this at depth.
 
-How to avoid this? Pick the simplest technology that will work - but leaves room for expansion. Not everything needs to be written in Angular on high-end distribruted cloud service. As a developer, become familiar with a few approaches. That way you can make informed choices and save a lot of effort, cost and heartbreak.
+How to avoid this? Pick the simplest technology that will work - but leaves room for expansion. Not everything needs to be written in Angular on high-end distribruted cloud service. As a developer, become familiar with a few approaches. That way you can make informed choices and save a lot of effort, cost and gnashing of teeth.
 
 
 [Next> Platform / IDE](IDE.md)

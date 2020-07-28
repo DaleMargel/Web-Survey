@@ -75,15 +75,15 @@ The since then, Andrea created a succession of libraries to explore possible sol
 
 Heresy does many things better than React. [Andrea has listed some of them here](https://github.com/WebReflection/heresy/blob/master/README.md). Heresy is only one of a dozen libraries in WebReflection. If Heresy does not meet your needs, then one of the others likely will. See the [WebReflection](../People/WebReflection.md) section of this document for details.
 
-## My Choice
+### My Choice..
 
 - React - If you want a conventional development experience.
 - Heresy (or sibling) - If you want to walk on the wild side.
 - Preact+HTM - if you want a compromise between the two.
 
-I choose Preact+HTM in order to have a lightweight environment that can (in theory) leverage many of the tools built for React. It is also very similar to React so skills can transfer to land a job. 
+I choose Preact+HTM in order to have a lightweight environment that can (in theory) leverage many of the tools built for React. It is also very similar to React so skills can transfer to into the job market. 
 
-I also plan on giving Heresy (or sibling) another try once I have sorted out which one(s) to use.
+For my own projects, I plan on giving Heresy (or sibling) another try once I have sorted out which one(s) to use.
 
 # Rendering
 
@@ -93,7 +93,7 @@ I also plan on giving Heresy (or sibling) another try once I have sorted out whi
 | DOM Diffing | Rendering to the DOM only what has changed. |
 | Control Hierarchies | Structure controls to make development easier. |
 
-## Where JS is Rendered
+## Where JS is Rendered?
 Javascript is flexible but HTM is efficient and is more easily read by web crawlers. How do we resolve the tension between the two?
 
 | Strategy | Description |
@@ -102,9 +102,9 @@ Javascript is flexible but HTM is efficient and is more easily read by web crawl
 | CSR | Client Side Rendering : the server sends javascript to the client which is then used to render a web page. This is responsive but it can be big and slow. |
 | SSR | Server Side Rendering : the server renders the javascript into HTML then sends the HTML to the client for rendering. This can be much faster than CSR if the content is relatively static. |
 | Mixed | The landing page is SSR but the other pages are CSR. This gives a fast start up without too much loss of reactivity |
-| Partial Hydration | Partial Hydration (PH) : Some parts are rendered as SSR while other parts are rendered CSR. The developer decides which strategy to use. This is the best solution. |
+| Partial Hydration | Partial Hydration (PH) : Some parts are rendered as SSR while other parts are rendered CSR. The developer decides which strategy to use. |
 
-### My choice
+### My choice..
 
 [Partial Hydration](https://medium.com/@luke_schmuke/how-we-achieved-the-best-web-performance-with-partial-hydration-20fab9c808d5) best if you can do it. While relatively new I expect it to become a preferred technique over the next few years. See also [this article](https://markus.oberlehner.net/blog/building-partially-hydrated-progressively-enhanced-static-websites-with-isomorphic-preact-and-eleventy/#demo-and-full-code). An added advantage of PH is the potential for supporting all browsers. If a feature fails it falls back to SSR which should at least render the component.
 
@@ -121,7 +121,8 @@ Updating the DOM is time-consuming so many frameworks keep track of what has cha
 
 - Heresy takes advantage of tagged template literals. The only DOM elements that can change are those bits represented by the "holes". This lets heresy make the DOM diffing extremely light and blazingly fast without the need for a virtual DOM.
 
-### My Choice
+### My Choice..
+
 I like the Heresy approach, but Preact still has the smallest size.
 
 ## Managing Control Hierarchies
