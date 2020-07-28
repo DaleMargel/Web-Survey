@@ -85,4 +85,4 @@ Disadvantages:
 - The web is really not that simple ...
 
 
-[Next> Design Technology Stack](TechStack.md)
+[Next> Design / Technology Stack](TechStack.md)

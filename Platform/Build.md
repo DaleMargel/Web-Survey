@@ -38,3 +38,5 @@ The author thinks that the whole npm/package infrastructure is broken. He is als
   - In the meanwhile all IE versions have become unsupported except for IE11 - which represents 1.38% of browsers and falling.  
 
 Libraries like "[Preact](https://github.com/preactjs/preact)" with "[Htm](https://github.com/developit/htm)" allow React-like code to be written that runs directly on the browser with no intermediate processing. It is smaller and faster too. My choice is to use these whenever you can.
+
+[Next> Quality](../Quality/Quality.md)

@@ -15,4 +15,4 @@ There is a universe of different ways to build software. Lets list the features 
 | Rational | Dead platforms (e.g., [IE](https://death-to-ie11.com/)) are not explicitly supported. |
 
 
-[Next> Design Approach](Approach.md)
+[Next> Design / Approach](Approach.md)

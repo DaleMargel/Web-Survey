@@ -23,11 +23,11 @@ The following symbols are used in the tables:
 | ⚑ | This looks interesting. I should look into at some point. |
 
 ## Table of contents
-1. [Wish List](WishList.md)
 2. Application Design
-	1. [Approach](Approach.md)
-	2. [Technology Stack](TechStack.md)
-	3. [Anatomy of a Web Application](Anatomy.md)
+	1. [Wish List](./Design/WishList.md)
+	2. [Approach](./Design/Approach.md)
+	3. [Technology Stack](./Design/TechStack.md)
+	4. [Anatomy of a Web Application](./Design/Anatomy.md)
 3. Client Platform
     1. [Team Dogma](./Platform/TeamDogma.md)
 	2. [IDE](./Platform/IDE.md)
@@ -73,4 +73,4 @@ The following symbols are used in the tables:
 9. Technology
 	1. [Thiea](./Technology/Thiea.md)
 
-[Next> Design WishList](./Design/WishList.md)
+[Next> Design / WishList](./Design/WishList.md)

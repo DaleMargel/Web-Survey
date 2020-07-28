@@ -11,4 +11,4 @@
 ## Legacy Support
 ## Server Side Rendering
 
-[Next> Quality](Quality.md)
+[Next> Server](../Server/Server.md)
