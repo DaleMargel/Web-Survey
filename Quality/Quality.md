@@ -5,7 +5,7 @@
 Testing involves:
 - unit testing - verifies methods on modules
 - API testing - verified queries on server
-- E2E testing - verifies user interface behaviour
+- E2E testing - verifies user interface behavior
 
 | Package | Stars | Type | Description |
 | ------- | -----:| ---- | ----------- |

@@ -3,7 +3,7 @@ Of course this refers to javascript.
 
 What version of javascript/typescript to use? This is really a question of how much pain you wish to accept to support older browsers such as IE.
 
-Javascript versions are confusing. The verions here are based on this [link](https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c) and on this [link](http://2ality.com/2018/02/ecmascript-2019.html) which has a lot of good information plus some good **electronic books on JavaScript**.
+Javascript versions are confusing. The versions here are based on this [link](https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c) and on this [link](http://2ality.com/2018/02/ecmascript-2019.html) which has a lot of good information plus some good **electronic books on JavaScript**.
 
 Information current as of 2020.07.24
 
@@ -24,7 +24,7 @@ Information current as of 2020.07.24
 ## Advice
 It appears that 75% of users are on an evergreen browser. These support the most recent versions of javascript. For more information explore [CanIUse](https://caniuse.com/#home).
 
-| Verson | Advice |
+| Version | Advice |
 | ---- | ------ |
 | ES1-4 | Obsolete. Over 20 years old, do not use |
 | ES5  | Use when wide browser support is VERY important. ES5 lacks many modern language features that are needed by most frameworks, so the code will likely have to be transpiled from a higher version of javascript. This can bloat the code and introduce subtle bugs. [This article explains it](https://medium.freecodecamp.org/you-might-not-need-to-transpile-your-javascript-4d5e0a438ca) (2017). At best, you might increase browser support by 1%-2%. It is worth it? You be the judge.  |

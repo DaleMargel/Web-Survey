@@ -1,5 +1,5 @@
 # Approach
-How to buid an application that runs everywhere?
+How to build an application that runs everywhere?
 
 There are a lot of interesting technologies out there. How do we narrow the list? The first cut is the approach that the tool takes toward targeting a platform. In reality there are only a few approaches.
 
@@ -23,7 +23,7 @@ There are two directions one can take:
 Multi-target platforms take the first approach; Web hybrid take the second.
 
 ## Native
-This is the best way to write an application for a single platform. It is the most expensive way to write an applicaton for many platforms. If we want to target Web, Linux, Windows, Mac, Android, and iOS we need to write the application 6 times. All of these would be quite different and need a lot of detailed knowlege about the platform and the tools used. This is not feasable.  
+This is the best way to write an application for a single platform. It is the most expensive way to write an applicaton for many platforms. If we want to target Web, Linux, Windows, Mac, Android, and iOS we need to write the application 6 times. All of these would be quite different and need a lot of detailed knowledge about the platform and the tools used. This is not feasible.  
 
 ## Multi-Target
 There are languages that, usually via [LLVM](https://llvm.org/), can target a large number of platforms. Many of these have tools that enable running on multiple platforms using the same code. Often these tools do not support Web, or support it badly.
@@ -35,10 +35,10 @@ Also on the radar is Web Assembly (WASM). This is low level code that can run on
 | [Flutter](https://flutter.dev/)⚑ | Uses the Dart language and targets Desktop, Mobile and Web. Developers seem to like it and it is rising quickly in popularity. / I have not used it yet, but from what I see, it is worth a try.  |
 | [Haxe](https://haxe.org/) | This started out as a 'flash' alternative, but has evolved well beyond it. It can compile to a range of languages: JavaScript, C++, C#, Java, Java(VM), Python, Lua, PHP, Flash, Neko(VM) and HashLink(VM). It can target any common platform. It supports Web through javascript, but not through a cross-platform API. |
 | [Haxe/OpenFL](https://www.openfl.org/) | This is a cross-platform library, but it is intended for games. |
-| [Haxe/Cocktail](https://github.com/silexlabs/Cocktail) | Implements html/css parts of a web browser as a DOM-style callable library. Calls to this library result in a widget being rendered natively. An identical call to the javascript library results in a widget being rendered to a browser. / This is truly a cross-platform library, and an amazing and ambitious project. Unfortunately it suffers from incomplete support of modern HTML5. I guess it was too ambitious! |
+| [Haxe/Cocktail](https://github.com/silexlabs/Cocktail) | Implements HTML/CSS parts of a web browser as a DOM-style callable library. Calls to this library result in a widget being rendered natively. An identical call to the javascript library results in a widget being rendered to a browser. / This is truly a cross-platform library, and an amazing and ambitious project. Unfortunately it suffers from incomplete support of modern HTML5. I guess it was too ambitious! |
 | [Xamarin](https://github.com/xamarin) | Targets Desktop, Mobile and WASM using C#. / No Web Support. |
 | [Kotlin](https://kotlinlang.org/)⚑ | Targets Desktop, Mobile, Web (via javascript) and WASM. / I do not know how well it supports Web but intend to eventually have a look. |
-| [Rust](https://www.rust-lang.org/)⚑ | A C++ replacement that compiles nicely to most native platforms and the preferred tool for WASM. It is intended for writing low level system code and handling large code bases. It has strict rules for sharing memory and can therefore ensure its integrity and deterministic lifecycle. No GC needeed. / I have not yet explored the ecosystem for cross-platform code generation, but it is likely that some exist.  |
+| [Rust](https://www.rust-lang.org/)⚑ | A C++ replacement that compiles nicely to most native platforms and the preferred tool for WASM. It is intended for writing low level system code and handling large code bases. It has strict rules for sharing memory and can therefore ensure its integrity and deterministic life cycle. No GC needed. / I have not yet explored the ecosystem for cross-platform code generation, but it is likely that some exist.  |
 | [Go](https://golang.org/)⚑ | A C++ replacement that runs on most platforms, but most especially servers. Go is a minimal language that handles fibers (small threads) really well. / As with Rust, I have not explored the ecosystem for cross-platform code generation, but it is likely that some exist. |
 
 ## Web Hybrid

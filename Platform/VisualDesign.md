@@ -133,9 +133,9 @@ There are a set of tools used to help style web sites
 # Managing Control Hierarchies
 As applications get bigger so do the number of controls. Managing these can become quite difficult.
 
-One approach is [Atomic Design](https://atomicdesign.bradfrost.com/) which is an idea (and Book) by Brad Frost. It recommends breaking up the contols folder into 5 folders - based on level in hierarchy. 
+One approach is [Atomic Design](https://atomicdesign.bradfrost.com/) which is an idea (and Book) by Brad Frost. It recommends breaking up the controls folder into 5 folders - based on level in hierarchy. 
 
-1. basic styled html controls. 
+1. basic styled HTML controls. 
 2. aggregates above to have a purpose (e.g. search, login).
 3. aggregates above to a unit of work (e.g. header, catalog, photos).
 4. aggregates above into page layouts for different screens sizes.
@@ -151,13 +151,13 @@ Stars updated 2020.07.24
 ## My Choice..
 I don't know. 
 
-- CSS libraries like Tacyons are simple and universal but do not supply any ready-made complex controls.
+- CSS libraries like Tachyons are simple and universal but do not supply any ready-made complex controls.
 
 - Design Systems supply a rich set of controls, but can be tightly coupled with a particular tool - typically React. It can also depend on a build workflow, which I would like to avoid.
 
 - CSS-in-JS libraries are powerful and universal, but often depend on the developer to create the controls they need.
 
-- I would definately choose to use StoryBook and Figma.
+- I would definitely choose to use StoryBook and Figma.
 
 - I like the Atomic Design principle, but using a Design System of prebuilt controls means that I do not have to do this.
 

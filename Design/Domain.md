@@ -1,11 +1,11 @@
 # Domain Model
 Before we can do anything, we must know what the application does.
 
-The domain model is the underlying model that the application emulates. A school system will contain (abstractions of) things like students, classrooms, etc. A bankng system will contain account and transactions.
+The domain model is the underlying model that the application emulates. A school system will contain (abstractions of) things like students, classrooms, etc. A banking system will contain account and transactions.
 
 Why do we need this?
 
-Many systems are built without a domian model. They work fine for a while, but over time disorder creeps in. With no blueprint to follow, growth is chaotic and the application becomes harder to maintain. A domain model keeps the code focused on requred features and minimizes the code needed to implement those features.
+Many systems are built without a domain model. They work fine for a while, but over time disorder creeps in. With no blueprint to follow, growth is chaotic and the application becomes harder to maintain. A domain model keeps the code focused on required features and minimizes the code needed to implement those features.
 
 There are many ways to do this, but all of them are a form of "divide and conquer". The model does not need to be comprehensive, just enough to make sure you start on the right track.
 
@@ -26,7 +26,7 @@ Look at each story and determine what the system must do to support it.These are
 
 - Extensions : Look at each step and determine common ways that it might fail. Then think of steps that would recover from the failure. Sometimes the failure can be overcome, sometimes it cannot.
 
-- Variations : Look at the usecases for cases where there is more than one way of doing the same thing. For instance, payment by credit card or by paypal. They accomplish payment but in different ways.
+- Variations : Look at the use cases for cases where there is more than one way of doing the same thing. For instance, payment by credit card or by PayPal. They accomplish payment but in different ways.
 
 - Sub Scenarios : Some use cases are repeated in many other. Signing into a system is one example. Factor these out into prerequisites or as a part of the parent use case.
 

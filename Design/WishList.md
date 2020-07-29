@@ -5,7 +5,7 @@ There is a universe of different ways to build software. Lets list the features 
 | ------- | ----------- |
 | Universal | Write once, run anywhere: Desktop / Mobile / Web |
 | Inexpensive | The tools are free or cost little. |
-| Mimimal | The tools require minimum coding. |
+| Minimal | The tools require minimum coding. |
 | Lean | The underlying technology does not add too much size. |
 | Simple | The tools are simple to set up and use. |
 | Familiar | The tools use well known languages and paradigms. |

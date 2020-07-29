@@ -16,7 +16,7 @@ Complexity is the biggest problem in application development. Yet we often compo
 
 ## Legend
 The following symbols are used in the tables:
-| Symbol | Descripton |
+| Symbol | Description |
 |:------:| ---------- |
 | ★ | Github stars, a rough indicator or popularity |
 | 💗 | I like this |
@@ -47,7 +47,7 @@ The following symbols are used in the tables:
 	4. [Code Coverage](./Quality/Quality.md#code-coverage)
 	6. [SPA Compliance](./Quality/Quality.md#spa-compliance)
 	7. [Code Size](./Quality/Quality.md#code-size)
-	8. [Profiling](./Quality/Quality.md#porofiling)
+	8. [Profiling](./Quality/Quality.md#profiling)
 	9. [Legacy Support](./Quality/Quality.md#legacy-support)
 	10. [Server Side Rendering](./Quality/Quality.md@server-side-rendering)
 4. [Server](./Server/Server.md)
@@ -68,4 +68,4 @@ The following symbols are used in the tables:
 	1. [Containers](./Deployment/Deployment.md#containers)
 	2. [Host Server](./Deployment/Deployment.md#host-server)
 
-[Next> Design / WishList](./Design/WishList.md)
+[Next> Design / Wish List](./Design/WishList.md)

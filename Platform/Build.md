@@ -29,7 +29,7 @@ The author thinks that the whole npm/package infrastructure is broken. He is als
 
 - [Deno](https://deno.land/), the successor to Node, uses ESM modules and accepts TypeScript so no transpiling or bundling is needed.
 
-- [Unpkg](https://unpkg.com/) publishes all NPM (CJS) files as (ESM). They are all available online and ready to go. No transpiler needed.
+- [Unpkg](https://unpkg.com/) publishes all NPM (CJS) files as (ESM). They are all available on line and ready to go. No transpiler needed.
 
 - React injects JSX into javascript through a transpiler. JSX was originally adopted because no equivalent templating existed in javascript. Now it does: tagged template literals can replace JSX, resulting in smaller, faster code with no need for transpiling.
 

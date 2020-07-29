@@ -46,7 +46,6 @@ Creating an awesome back end server.
 | Secure Socket | Support https |
 | CORS | Allow access to other domains |
 | Logger | Record errors for future analysis |
-| Log Browser | Analyse logs |
 | Load Balancer | Distributes requests among servers |
 | Rate Limiting | Prevents server from being overwhelmed |
 | Analytics | Determine who is using the site and how? |
