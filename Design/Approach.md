@@ -83,7 +83,7 @@ Disadvantages:
 - Code on client is not secure.
 - The web is really not that simple ...
 
-## My Choixe..
+## My Choice..
 PWA's have the most potential.
 
 [Next> Design / Technology Stack](TechStack.md)
