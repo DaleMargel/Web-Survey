@@ -1,5 +1,5 @@
 # Wish List
-There is a universe of different ways to build software. Lets list the features of an ideal development environment. For most developers, this list should be self-evident.
+There is a universe of different ways to build software. Lets list the features of an ideal development environment. For most developers, this list should be self-evident. Adjust as needed.
 
 | Feature | Description |
 | ------- | ----------- |
@@ -14,5 +14,4 @@ There is a universe of different ways to build software. Lets list the features 
 | Supported | Community or commercial support is available. |
 | Rational | Dead platforms (e.g., [IE](https://death-to-ie11.com/)) are not explicitly supported. |
 
-
-[Next> Design / Approach](Approach.md)
+[Next> Application Design / Approach](Approach.md)

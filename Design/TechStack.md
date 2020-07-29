@@ -83,7 +83,9 @@ These are just Modern Servers designed to handle insane loads safely and securel
 These need special consideration and are discussed at length later in this document. 
 
 
+
 # Holotypes
 In the article [Application Holotypes: A Guide to Architecture Decisions](https://jasonformat.com/application-holotypes/), Jason Miller describes the main categories of web applications and their overall architecture. This can inform our choice of tools, or at least get us thinking about the type of application we are writing. Spoiler: they are all PWA.
 
+[Down> Design / Technology / Mdx](./Technology/Mdx.md)
 [Next> Design / Anatomy of a Web Application](Anatomy.md)

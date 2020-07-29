@@ -8,4 +8,4 @@ While searching for IDE's I came across **Thiea** and found it very interesting.
 | [Theia Strotty](https://github.com/theia-ide/sprotty) | ★142 | Diagramming on Theia. [Article here](https://www.typefox.io/blog/sprotty-a-web-based-diagramming-framework). This is a lower level API based on SVG on which GLSP is based. |
 | [Theia Gitpod](https://www.gitpod.io/) | | `FREEMIUM` Used by Theia - Gitpod launches ready-to-code dev environments for your GitHub or GitLab project with a single click. The cost is free for limited use, but quickly climbs to $25/month for unfettered hosted use. |
 
-[Back> Platform / IDE](PlatformIDE.md#IDE)
+[Up> Platform / Repository](../Repository.md)

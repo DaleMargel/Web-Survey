@@ -1,6 +1,8 @@
 # The Search for the Holy Grail
 An opinionated exploration of the many (and best) ways to build an application.
 
+Status: most data is in place, but still in draft,
+
 ## Why?
 If you were to set up an ideal application development platform - which one would you choose?
 
@@ -23,12 +25,12 @@ The following symbols are used in the tables:
 | ⚑ | This looks interesting. I should look into at some point. |
 
 ## Table of contents
-2. Application Design
+1. Application Design
 	1. [Wish List](./Design/WishList.md)
 	2. [Approach](./Design/Approach.md)
 	3. [Technology Stack](./Design/TechStack.md)
 	4. [Anatomy of a Web Application](./Design/Anatomy.md)
-3. Client Platform
+2. Client Platform
     1. [Team Dogma](./Platform/TeamDogma.md)
 	2. [IDE](./Platform/IDE.md)
 	3. [Repository](./Platform/Repository.md)
@@ -37,7 +39,7 @@ The following symbols are used in the tables:
 	6. [Visual Design](./Platform/VisualDesign.md)
 	7. [Build Tools](./Platform/Build.md)
 	8. Accessibility / ARIA
-4. [Quality](./Quality/Quality.md)
+3. [Quality](./Quality/Quality.md)
 	1. [Linting](./Quality/Quality.md#linting)
 	2. [Unit Test](./Quality/Quality.md#unit-test)
 	3. [Integration Test](./Quality/Quality.md#integration-test)
@@ -48,7 +50,7 @@ The following symbols are used in the tables:
 	8. [Profiling](./Quality/Quality.md#porofiling)
 	9. [Legacy Support](./Quality/Quality.md#legacy-support)
 	10. [Server Side Rendering](./Quality/Quality.md@server-side-rendering)
-5. [Server](./Server/Server.md)
+4. [Server](./Server/Server.md)
 	1. [Server Interface](./Server/Server.md#server-interface)
 	2. [Database](./Server/Server.md#database)
 	3. [Reverse Proxy](./Server/Server.md#reverse-proxy)
@@ -62,15 +64,8 @@ The following symbols are used in the tables:
 	11. [Rate Limiting](./Server/Server.md#rate-limiting)
 	12. [Analytics](./Server/Server.md#analytics)
 	13. [SEO](./Server/Server.md#seo)
-6. [Deployment](./Deployment/Deployment.md)
+5. [Deployment](./Deployment/Deployment.md)
 	1. [Containers](./Deployment/Deployment.md#containers)
 	2. [Host Server](./Deployment/Deployment.md#host-server)
-7. People
-	1. [Developit](./People/DevelopIt.md)
-	2. [WebReflection](./People/WebReflection.md)
-	3. [DiegoHaz](./People/DiegoHaz.md)
-	4. [Daybrush](./People/Daybrush.md)
-9. Technology
-	1. [Thiea](./Technology/Thiea.md)
 
 [Next> Design / WishList](./Design/WishList.md)

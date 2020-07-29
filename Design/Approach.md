@@ -59,7 +59,6 @@ Extra points to NWJS for being really simple to use.
 
 
 ## Progressive Web Application (PWA)
-This is my preferred choice.
 
 A PWA is just a web page that uses a few conventions to allow the browser to handle it as an application. In other words, an installable web application. When not installed they are run as an ordinary web page.
 
@@ -84,5 +83,7 @@ Disadvantages:
 - Code on client is not secure.
 - The web is really not that simple ...
 
+## My Choixe..
+PWA's have the most potential.
 
 [Next> Design / Technology Stack](TechStack.md)
