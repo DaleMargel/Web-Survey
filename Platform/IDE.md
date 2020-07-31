@@ -1,5 +1,5 @@
 # Integrated Development Environment
-The Integrated Development Environment used to write code.
+The Integrated Development Environment used to write HTML and javascript/typescript code.
 
 There are many. Here are some that you can use for web development. 
 - FREE : means free and open source
@@ -27,5 +27,5 @@ My preferred IDE is Visual Studio Code.
 
 I also recommend Eclipse, but most of these IDE's are quite good.
 
+[Next> Platform / Repository](Repository.md)<br>
 [Down> Platform / Technology / Theia](./Technology/Theia.md)
-[Next> Platform / Repository](Repository.md) 

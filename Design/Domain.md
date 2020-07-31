@@ -88,4 +88,4 @@ Additional tests can be derived from these models
 ## Move On
 At this point fill in the methods / code and you will have a starting point for the project. Have fun!
 
-[Next> Application Design / Wish List](WishList.md)
+[Next> Design / Wish List](WishList.md)

@@ -6,7 +6,6 @@ The technology and structure of the application.
 
 | Aspect | Description |
 | ------ | ----------- |
-| [Team Dogma](./Platform/TeamDogma.md) | Things that should not matter - but do |
 | [IDE](./Platform/IDE.md) | The Integrated Development Environment used to write code  |
 | [Repository](./Platform/Repository.md) | A service to store and version code |
 | [Language](./Platform/Language.md) | What version of javascript to use |
@@ -61,4 +60,4 @@ Packaging and hosting the application
 | Orchestration | Coordinate containers |
 | Server | The server that runs it all |
 
-[Next> Platform / Team Dogma](../Platform/TeamDogma.md)
+[Next> Platform](../Platform/Platform.md)

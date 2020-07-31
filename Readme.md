@@ -1,18 +1,18 @@
 # The Search for the Holy Grail
 An opinionated exploration of the many (and best) ways to build an application.
 
-Status: most data is in place, but still in draft,
+Status: work in progress.
 
 ## Why?
-If you were to set up an ideal application development platform - which one would you choose?
+If you were to set up an ideal application development platform - which technologies would you choose?
 
 I have been a developer or an architect for 40-ish years. I have seen the innards of countless systems written in a mind-numbing number of technologies and platforms. The most common feature of these systems is that they are overly complicated for what they do. This means they cost more to develop and maintain. They also have more bugs and are more likely to break under stress or change.
 
 This review asks one question: 
 
-> How can I build an application with the minimum amount of effort and complexity?
+**How can I build an application with the minimum amount of effort and complexity?**
 
-Complexity is the biggest problem in application development. Yet we often compound it with overly complicated frameworks and rituals that limit our ability to write good code.
+Complexity is the biggest problem in software development. Yet we often compound it with overly complicated frameworks and rituals that limit our ability to write good code.
 
 ## Legend
 The following symbols are used in the tables:
@@ -25,13 +25,14 @@ The following symbols are used in the tables:
 | ⚑ | This looks interesting. I should look into at some point. |
 
 ## Table of contents
-1. [Application Design](./Design/Design.md)
-	1. [Wish List](./Design/WishList.md)
-	2. [Approach](./Design/Approach.md)
-	3. [Technology Stack](./Design/TechStack.md)
-	4. [Anatomy of a Web Application](./Design/Anatomy.md)
+1. [Design](./Design/Design.md)
+	1. [Domain Model](./Design/Domain.md)
+	2. [Wish List](./Design/WishList.md)
+	3. [Approach](./Design/Approach.md)
+	4. [Technology Stack](./Design/TechStack.md)
+    5. [Team Dogma](./Design/TeamDogma.md)
+	6. [Anatomy of a Web Application](./Design/Anatomy.md)
 2. Client Platform
-    1. [Team Dogma](./Platform/TeamDogma.md)
 	2. [IDE](./Platform/IDE.md)
 	3. [Repository](./Platform/Repository.md)
 	4. [Language](./Platform/Language.md)
@@ -68,4 +69,4 @@ The following symbols are used in the tables:
 	1. [Containers](./Deployment/Deployment.md#containers)
 	2. [Host Server](./Deployment/Deployment.md#host-server)
 
-[Next> Design / Wish List](./Design/WishList.md)
+[Next> Design](./Design/Design.md)

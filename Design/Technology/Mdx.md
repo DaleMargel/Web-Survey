@@ -11,4 +11,4 @@ In reading about styled systems, MDX came up a lot. MDX is Markdown + React. It 
 | [MDX Blocks](https://mdx-blocks.netlify.com/) | ★155 | A MDX page builder |
 | [react patterns](https://jxnblk.com/blog/defining-component-apis-in-react/) | | **Defining Components APIs in React** (2018.07.08). This is a really good overview on how to use React. It was written by the author of MDX-Deck (above) |
 
-[Up> Visual Design / Tech Stack](../TechStack.md)
+[Up> Design / Tech Stack](../TechStack.md)

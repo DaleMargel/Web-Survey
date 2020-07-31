@@ -14,4 +14,4 @@ There is a universe of different ways to build software. Lets list the features 
 | Supported | Community or commercial support is available. |
 | Rational | Dead platforms (e.g., [IE](https://death-to-ie11.com/)) are not explicitly supported. |
 
-[Next> Application Design / Approach](Approach.md)
+[Next> Design / Approach](Approach.md)

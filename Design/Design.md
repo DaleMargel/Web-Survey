@@ -5,5 +5,7 @@ This section determines the shape of the application.
 - [Wish List](WishList.md)
 - [Approach](Approach.md)
 - [Technology Stack](TechStack.md)
+- [Team Dogma](TeamDogma.md)
 - [Anatomy of a Web Application](Anatomy.md)
 
+[Next> Design / Domain Model](./Domain.md)
