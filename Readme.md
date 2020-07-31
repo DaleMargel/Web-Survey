@@ -25,7 +25,7 @@ The following symbols are used in the tables:
 | ⚑ | This looks interesting. I should look into at some point. |
 
 ## Table of contents
-1. Application Design
+1. [Application Design](./Design/Design.md)
 	1. [Wish List](./Design/WishList.md)
 	2. [Approach](./Design/Approach.md)
 	3. [Technology Stack](./Design/TechStack.md)

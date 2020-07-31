@@ -1,53 +1,76 @@
 # Domain Model
-Before we can do anything, we must know what the application does.
+What does the application do?<br>
+How does the application do it?
 
-The domain model is the underlying model that the application emulates. A school system will contain (abstractions of) things like students, classrooms, etc. A banking system will contain account and transactions.
 
-Why do we need this?
+The domain model describes the things that the application works with. If it is a school system, the domain will contain objects representing students, classes, grades, etc. If it is a store, it will contain objects representing inventory, shopping carts, payment, etc.
 
-Many systems are built without a domain model. They work fine for a while, but over time disorder creeps in. With no blueprint to follow, growth is chaotic and the application becomes harder to maintain. A domain model keeps the code focused on required features and minimizes the code needed to implement those features.
+The domain model describes what the application does and how it works. It also informs the technical architecture as well as hardware and hosting choices. Having a domain model is always a good idea.
 
-There are many ways to do this, but all of them are a form of "divide and conquer". The model does not need to be comprehensive, just enough to make sure you start on the right track.
+Many systems are built without a domain model.
+- Some teams do not know how to model.
+- Small projects may not need one.
+- Modern agile / scrum approaches do not encourage models.
 
-Here is one technique.
+## Why you need a model
+Most applications have a lot of interlocking parts that must work together. Assembling these parts without a plan will result in sub-par results.
+
+Agile makes the claim that software is malleable and the design can be realized incrementally. This is only partially correct. Models are more flexible than code. Models are built wholistically, considering all known features. In contrast, an Agile project builds the model one feature at a time. It will eventually arrive at a model, but it will take more work and wasted effort.
+
+Would you build a house without a plan? If it is a dog house then no plan is needed. If you are building a [Marina Bay Sands](https://www.marinabaysands.com/) hotel, then you absolutely need a design and some careful engineering. Software is not that different.
+
+A the domain model need not be detailed nor comprehensive. For iterative approaches, this design should be light an minimal. It is only a starting point that shows the basic outline of how the system will eventually look using what is known at the time.
+
+Here is one technique for creating a domain model. It is a bit old-school, but it works. Feel free to scale it down if you want.
 
 ## Context
-List all the types of users of the system. Add to this other systems that ours will send data to, or get data from. This is a UML Context Diagram. It sets the universe in which the system will operate.
+List all the types of users of the system. List external systems that exchange data with the system. This is a UML Context Diagram. It sets the universe in which the system will operate.
+
+Be sure to consider:
+- Administrators that monitor the system
+- Support people that backup data and perform diagnostic work
+- Search engines that catalog the site (SEO)
+- External data sources and services (e.g. maps, payment)
+- Hackers ??
 
 ## Stories
-Look at the various types of users in the domain model. Think about their needs and how the system might serve those needs. Each one of these is a Story. It should be worded using words the user would understand.
+Consider an actor to be any user or system that can initiate some action within the system being developed. Look at all the actors. Think about their needs and how the system might serve those needs. Each one of these is a Story. It should be worded using words the user would understand.
 
-At this point many projects launch development efforts based on the stories. This is fine for a small system. For larger system you need at least a simple domain model to start - so continue to the next steps.
+At this point you can launch into a scrum-like project using the stories. This is fine for a small system. For larger system you need at least a minimal simple domain model to start - so continue to the next steps.
 
 ## Use Cases
-Look at each story and determine what the system must do to support it.These are use cases. Add to this any system that requests data from your system.
+Look at each story and determine what steps the system must do to support it. These are use cases.
 
-- Main Scenario : Write down the steps that describe the most common interaction between the user and the system.
+- **Main Scenario** : Write down the main sequence of steps that describe the most common interaction between the user and the system.
 
-- Extensions : Look at each step and determine common ways that it might fail. Then think of steps that would recover from the failure. Sometimes the failure can be overcome, sometimes it cannot.
+- **Extensions** : Look at each step and determine common ways that it might fail. Then think of steps that would recover from the failure. Sometimes the failure can be overcome, sometimes reducing the damage is all that can be done.
 
-- Variations : Look at the use cases for cases where there is more than one way of doing the same thing. For instance, payment by credit card or by PayPal. They accomplish payment but in different ways.
+- **Variations** : Look at the use cases for situations where there are multiple options. For instance, payment by credit card or by PayPal. These are variations and they will have different steps associated with them.
 
-- Sub Scenarios : Some use cases are repeated in many other. Signing into a system is one example. Factor these out into prerequisites or as a part of the parent use case.
+- **Sub Scenarios** : Factor out repeated bits into their own sub units.
 
-The trick here is knowing when to stop. Add enough detail that you have covered all of the difficult cases.
+The trick here is knowing when to stop. Add enough detail that you have covered all of the difficult cases. For tools, any text editor will do.
 
-## Sequence
-Look through the use cases. Look at the nouns and verbs. The nouns will likely become objects and the verbs will become methods on the object that receives the request. Use a UML Sequence Diagram if you want. 
+## Sequences
+Look through the scenarios. Locate the nouns and verbs in the steps. The nouns are canditate objects; the verbs can become methods on the object that receives the request. Build a sequence diagram for each scenario. It will implicitly contain your domain model. A good design tool, like [Sparx](https://sparxsystems.com/) can help a lot.
 
-When one object must interact with another, it must know about it. Determine how it will know or find out about it.
-
-Check - account for:
-- All of the use case nouns and verbs.
-- All of the users and systems in the context diagram.
+Check:
+- All of the actors initiate use cases.
+- All external systems are included in sequences.
 
 ## Objects
 At this point, you will have an object model. It should be technology agnostic. Apply design patterns to make the model more aligned to the technology you will be using.
+- Create initial data model from the object model.
+- Create initial code stubs from object model.
+
+A good design tool, like [Sparx](https://sparxsystems.com/) can do this automatically.
 
 ## Test Cases
-Test cases can be modeled from use cases in most cases. Add unit tests. Each one should test a logic flow or a single edge case.
+- Test cases can be mostly copied from the use cases. 
+- Add unit tests based on what is coded.
+- Add a unit test for each edge case.
 
 ## Move On
-Now that you have decided what the application needs to do, we need to look at how we are going to do it.
+At this point fill in the methods / code and you will have a starting point to kickstart the project. Have fun!
 
 [Next> Application Design / Wish List](WishList.md)
