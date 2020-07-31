@@ -41,7 +41,7 @@ Consider an actor to be any user or system that can initiate some action within 
 At this point you can launch into a scrum-like project using the stories. This is fine for a small system. For larger system you need at least a minimal simple domain model to start - so continue to the next steps.
 
 ## Use Cases
-Look at each story and determine what steps the system must do to support it. These are Use Cases. NOTE: The relationship between Stories and Use Cases is nuanced. Read up on it before diving in.
+Look at each story and determine what are it's goals. Each goal is a Use Case. Look at each Use Case and determine what steps the system must do to support it. These are Scenarios. NOTE: The relationship between Stories and Use Cases is nuanced. Read up on it before diving in.
 
 - **Main Scenario** : Write down the main sequence of steps that describe the most common interaction between the user and the system.
 
