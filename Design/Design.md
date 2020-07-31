@@ -6,3 +6,4 @@ This section determines the shape of the application.
 - [Approach](Approach.md)
 - [Technology Stack](TechStack.md)
 - [Anatomy of a Web Application](Anatomy.md)
+
