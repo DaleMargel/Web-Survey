@@ -36,14 +36,12 @@ Be sure to consider:
 - Hackers ??
 
 ## Stories
-Consider an actor to be any user or system that can initiate some action within the system being developed. Look at all the actors. Think about their needs and how the system might serve those needs. Each one of these is a Story. It should be worded using words the user would understand.
-
-At this point you can launch into a scrum-like project using the stories. This is fine for a small system. For larger system you need at least a minimal simple domain model to start - so continue to the next steps.
+Stories can be found by looking at each actor and thinking about what they need from the system. There is a lot of good books on stories and scrum. We will not be using it for our initial model.
 
 ## Use Cases
-Look at each Story and determine what are it's goals. Each goal is a Use Case. Look at each Use Case and determine how to meet this goal under a set of circumstances. These are Scenarios. NOTE: The relationship between Stories and Use Cases is nuanced, but not difficult. Read up on it before diving in.
+This is where the old-school comes in. Look at each Actor and determine what are it's goals. Each goal is a Use Case. Look at each Use Case and determine how to meet this goal under a set of circumstances. These are Scenarios.
 
-- **Main Scenario** : Write down the main sequence of steps that describe the most common interaction between the user and the system.
+- **Main Scenario** : This is the scenario that best describes the most typical sequence of steps for the Use Case.
 
 - **Extensions** : Look at each step and determine common ways that it might fail. Then think of steps that would recover from the failure. Sometimes the failure can be overcome, sometimes reducing the damage is all that can be done.
 
@@ -53,8 +51,8 @@ Look at each Story and determine what are it's goals. Each goal is a Use Case. L
 
 The trick here is knowing when to stop. Add enough detail that you have covered all of the difficult cases. For tools, any text editor will do.
 
-## Sequences
-Look through the scenarios. Locate the nouns and verbs. The nouns are canditate objects; the verbs can become methods on the object that receives the request. Build a [UML Sequence Diagram](https://en.wikipedia.org/wiki/Sequence_diagram) for each scenario. These diagrams will implicitly contain your domain object model. A good design tool, like [Sparx](https://sparxsystems.com/) can help a lot.
+## Sequence Diagrams
+Look through the scenarios. Locate the nouns and verbs. The nouns are canditate objects; the verbs can become methods on the object that receives the request. Build a [UML Sequence Diagram](https://en.wikipedia.org/wiki/Sequence_diagram) for each scenario. 
 
 Check:
 - All of the actors initiate use cases.
@@ -64,7 +62,7 @@ Check:
 *This means that if object A calls method on object B, then A knows about B or has a way of discovering it.
 
 ## Domain Object Model
-At this point, a [UML Object Model](https://en.wikipedia.org/wiki/Sequence_diagram) can be easily derived from the sequence diagram. It should be technology agnostic. Apply design patterns to make the model more aligned to the technology you will be using. 
+At this point, a [UML Object Model](https://en.wikipedia.org/wiki/Sequence_diagram) can be easily derived from the sequence diagram. Many good tools can do this for you. The model should be technology agnostic. Apply design patterns to make the model more aligned to the technology you will be using. 
 
 From here:
 - Create initial data model from the object model.
@@ -87,5 +85,26 @@ Additional tests can be derived from these models
 
 ## Move On
 At this point fill in the methods / code and you will have a starting point for the project. Have fun!
+
+# UML Modelling tools
+This list gives some free-ish [UML Modelling tools](https://www.guru99.com/best-uml-tools.html). 
+- Lists are easy to find. 
+- Excluded tools with limited free versions, dead links, or limited platforms.
+- General diagramming tools excluded, you need smart models!
+- Have included Sparx because I used it for serious work, but it costs.
+
+| UML Tool | Description |
+| -------- | ----------- |
+| [Sparx](https://sparxsystems.com/)💗 | I have a lot of good experience with this tool. It is very complete but costs money. |
+| [Papyrus](https://www.eclipse.org/papyrus/)⚑ | "Eclipse Papyrus is an industrial-grade open source Model-Based Engineering tool. Eclipse Papyrus has notably been used successfuly in industrial projects and is the base platform for several industrial modeling tools." I think this looks excellent, but I worry it might be too high-end for most. |
+| [UML Designer](http://www.umldesigner.org/)⚑ | This is an open source tool based on Eclipse and appears to have many of the high end features of Sparx. |
+| [BoUML](https://www.bouml.fr/)⚑ | Looks complete. Based on Qt. |
+| [Model IO](https://www.modelio.org/) | Looks full featured |
+| [Model Sphere](http://www.modelsphere.com/org/) | Looks full featured. Primarly windows, but possibly others |
+| [UMLet](https://www.umlet.com/) | Has a tool available for Visual Studio Code. It works like markdown for UML so you will have to learn a lot of syntax. I do not particularly recommend this approach. |
+| [Visual Paradigm](https://www.visual-paradigm.com/solution/freeumltool/) | This links to a community edition. "A full-featured, free UML software for visual modeling with UML 2.x diagrams". |
+
+
+
 
 [Next> Design / Wish List](WishList.md)
