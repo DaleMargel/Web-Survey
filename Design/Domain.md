@@ -59,7 +59,7 @@ Check:
 - All external systems are included in sequences.
 - Applicable relationships are known or can be discovered*.
 
-*This means that if object A calls method on object B, then A knows about B or has a way of discovering it.
+*This means that if object A calls method on object B, then A knows about B or has a way of discovering object B.
 
 ## Domain Object Model
 At this point, a [UML Object Model](https://en.wikipedia.org/wiki/Sequence_diagram) can be easily derived from the sequence diagram. Many good tools can do this for you. The model should be technology agnostic. Apply design patterns to make the model more aligned to the technology you will be using. 
@@ -87,24 +87,26 @@ Additional tests can be derived from these models
 At this point fill in the methods / code and you will have a starting point for the project. Have fun!
 
 # UML Modelling tools
-This list gives some free-ish [UML Modelling tools](https://www.guru99.com/best-uml-tools.html). 
-- Lists are easy to find. 
-- Excluded tools with limited free versions, dead links, or limited platforms.
-- General diagramming tools excluded, you need smart models!
-- Have included Sparx because I used it for serious work, but it costs.
+This list gives some free-ish [UML Modelling tools](https://www.guru99.com/best-uml-tools.html). These lists are easy to find. 
+
+- Tools all are free for commercial use
+- Tools are well supported and run on Windows, Mac, Linux
+- Tools are design tools, not just passive diagramming
+- Have included Sparx because I used it for serious work, but it costs money.
 
 | UML Tool | Description |
 | -------- | ----------- |
-| [Sparx](https://sparxsystems.com/)💗 | I have a lot of good experience with this tool. It is very complete but costs money. |
-| [Papyrus](https://www.eclipse.org/papyrus/)⚑ | "Eclipse Papyrus is an industrial-grade open source Model-Based Engineering tool. Eclipse Papyrus has notably been used successfuly in industrial projects and is the base platform for several industrial modeling tools." I think this looks excellent, but I worry it might be too high-end for most. |
-| [UML Designer](http://www.umldesigner.org/)⚑ | This is an open source tool based on Eclipse and appears to have many of the high end features of Sparx. |
-| [BoUML](https://www.bouml.fr/)⚑ | Looks complete. Based on Qt. |
-| [Model IO](https://www.modelio.org/) | Looks full featured |
-| [Model Sphere](http://www.modelsphere.com/org/) | Looks full featured. Primarly windows, but possibly others |
-| [UMLet](https://www.umlet.com/) | Has a tool available for Visual Studio Code. It works like markdown for UML so you will have to learn a lot of syntax. I do not particularly recommend this approach. |
-| [Visual Paradigm](https://www.visual-paradigm.com/solution/freeumltool/) | This links to a community edition. "A full-featured, free UML software for visual modeling with UML 2.x diagrams". |
+| Whiteboard💗 | You can use a whiteboard to manually build sequence diagrams and the class model at the same time. If you need a harcopy, take a photo. There is no "tool" to learn and it encourages you to keep the model small.  |
+| [Model IO](https://www.modelio.org/) | Appears to be based on Eclipse but is simpler than the others - and is easier to use. |
+| [UML Designer](http://www.umldesigner.org/) | Based on Eclipse. It looks quite complex to use, but does what we need it to do. |
+| [Papyrus](https://www.eclipse.org/papyrus/) | Based on Eclipse. It looks very complex and probably does what we need if you can find it. |
+| [Sparx](https://sparxsystems.com/) | I have a lot of good experience with this tool. It is very complete but costs money. |
+| [BoUML](https://www.bouml.fr/) | Looks complete and has an amazing set of features beyond UML. Based on Qt. The installer looks a bit complex so I did not test it for fear of messing up my system. |
+| [Model Sphere](http://www.modelsphere.com/org/) | Looks full featured. Primarly windows, but possibly others. I did not test this one. |
+| [UMLet](https://www.umlet.com/) | Has a tool available for Visual Studio Code. It works like a markdown editor for UML - so you will have to learn a lot of syntax. It is also more of a diagramming tool. I do not particularly recommend this approach. |
 
-
+## Summary
+We are designing a minimal model for our application. Manually creating it on a whiteboard is the simplest way to do this. The design tools are more applicable for detailed up-front work, usually in a corporate setting. These tools are complex, often expensive and take time to master.
 
 
 [Next> Design / Wish List](WishList.md)
