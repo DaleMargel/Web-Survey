@@ -42,7 +42,7 @@ Also on the radar is Web Assembly (WASM). This is low level code that can run on
 | [Go](https://golang.org/)⚑ | A C++ replacement that runs on most platforms, but most especially servers. Go is a minimal language that handles fibers (small threads) really well. / As with Rust, I have not explored the ecosystem for cross-platform code generation, but it is likely that some exist. |
 
 ## Web Hybrid
-These run web code in a native runtime, typically bolting a web server and browser on to the web page to make it look like an application. Most of these do not support all platforms (Desktop, Mobile, Web) or the resulting code can be very large and not work well on smaller mobile devices.
+These run web code in a native runtime, typically bolting a web server and browser on to the web page to make it look like an application. Most of these do not support all platforms (Desktop, Mobile, Web) or the resulting code can be very large and not work well on smaller mobile devices. See also [Awesome Desktop JS](https://github.com/styfle/awesome-desktop-js) that has some of these and many others.
 
 | Product | Description |
 | ------- | ----------- |
@@ -54,6 +54,9 @@ These run web code in a native runtime, typically bolting a web server and brows
 | [NWJS](https://nwjs.io/) | "NW.js (previously known as node-webkit) lets you call all Node.js modules directly from DOM and enables a new way of writing applications with all Web technologies." / No Mobile |
 | [PhoneGap](https://phonegap.com/) | "Adobe PhoneGap framework is an open source distribution of Cordova" / No Desktop |
 | [Cordova](https://cordova.apache.org/) | "Mobile apps with HTML, CSS & JS. Target multiple platforms with one code base" / No Desktop |
+| [Tauri](https://github.com/tauri-apps/tauri/) | "Tauri is a framework for building tiny, blazing fast binaries for all major desktop platforms. Developers can integrate any front-end framework that compiles to HTML, JS and CSS for building their user interface. The backend of the application is a rust-sourced binary with an API that the front-end can interact with." / All platforms, smaller runtimes. |
+
+
 
 Extra points to NWJS for being really simple to use.
 
