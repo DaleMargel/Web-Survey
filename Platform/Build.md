@@ -27,7 +27,7 @@ The author thinks that the whole npm/package infrastructure is broken. He is als
 
 - As of mid 2020, Node.js supports ESM modules (at least experimentally). Previously a bundler was needed to gather all NPM (CJS) modules and write them to a format that the browser could use. Read this [Modules Introduction](https://javascript.info/modules-intro) for a bit of context.
 
-- [Deno](https://deno.land/), the successor to Node, uses ESM modules and accepts TypeScript so no transpiling or bundling is needed.
+- [Deno](https://deno.land/), the successor to Node, imports ESM modules from a URL in an manner identical to a web browser. Since it does not use a local NPM store there is no packaging required. Deno also supports TypeScript directly, so no transpiler is needed to convert it to javascript.
 
 - [Unpkg](https://unpkg.com/) publishes all NPM (CJS) files as (ESM). They are all available on line and ready to go. No transpiler needed.
 
