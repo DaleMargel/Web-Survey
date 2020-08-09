@@ -41,3 +41,12 @@ Note: Diegohaz looks like it uses Flux. If so, all the better.
 | [fedoryakubovich/ express mongodb](https://github.com/fedoryakubovich/express-mongodb-boilerplate) | ★2 | Pragmatic features and layout. <br>**VERDICT** Deserves more stars, but is basic mongo, rest, and login. Too basic really...  |
 | [pjt3591oo/ react express](https://github.com/pjt3591oo/react-express-boilerplate) | ★1 | react - express 조합 boilerplate <br>**VERDICT** seems to have many of the parts, simple, not bad at all! |
 | [omidnavy/ child process express](https://github.com/omidnavy/nodejs-child-process-express-boilerplate) | ★0 | Just an example: Using express as a child process in a Node.js app, where the child has n
+
+# Deno
+[Deno](https://deno.land) is a modern replacement for Node.js, written by the same author.
+
+| Product | Stars | Description |
+| ------- | -----:| ----------- |
+| [Server](https://deno.land/std@0.63.0/http/server.ts) | | This is the standard deno server. It is about the same speed as Node, and it supports HTTPS directly (with some setup) |
+| [Oak](https://deno.land/x/oak@v6.0.1) | ★2.3k | A popular Deno web server. It extends Server and takes inspiration from Koa |
+| [Nexo](https://deno.land/x/nexo@v0.1.1)⚑ | ★1 | This one deserves special mention. It reports to render static fragments on the server and dynamic fragments on the client. It uses Preact (which I like) and [Otion](https://github.com/kripod/otion), a "atomic css-in-js" styling library. **NOTE**: I was unable to get this working out of the box. It seems to depend on a library in Deno which is no longer there.  |

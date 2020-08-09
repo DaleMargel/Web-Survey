@@ -30,7 +30,7 @@ This approach works best for simple web sites that do not need much security. Ma
 
 Security is enforced by the author needing to log into the host system to make changes. The generated site is public and cannot be changed by anybody reading the site.
 
-A list of tools can be found [here](https://www.staticgen.com/). Some are shown below. 
+A list of tools can be found on [staticgen.com](https://www.staticgen.com/). Some are shown below. 
 
 Stars updated on 2020.07.20.
 
@@ -40,6 +40,7 @@ Stars updated on 2020.07.20.
 | [Hugo](https://github.com/gohugoio/hugo) | ★45.6k | "Hugo is a static HTML and CSS website generator written in Go. It is optimized for speed, ease of use, and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. Hugo relies on Markdown files with front matter for metadata, and you can run Hugo from any directory. This works well for shared hosts and other systems where you don’t have a privileged account." |
 | [Jeckyl](https://github.com/jekyll/jekyll) | ★40.9k | "Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website. Jekyll is the engine behind GitHub Pages, which you can use to host sites right from your GitHub repositories." (By Github) |
 | [React Static](https://github.com/react-static/react-static/tree/master/) | ★8.8k | "A progressive static site is a website where every statically exported HTML page is an entry point to a fully-featured automatically-code-split React application. Just like a normal static site, static progressive websites are capable of loading initial landing pages very quickly, but then extend the user experience by transforming invisibly into a single-page React application." |
+| [Eleventy](https://github.com/11ty/eleventy/) | ★6.6k | "An alternative to Jekyll. Transforms a directory of templates (of varying types) into HTML. Works with HTML, Markdown, Liquid, Nunjucks, Handlebars, Mustache, EJS, Haml, Pug, and **JavaScript Template Literals**." This means it plays nicely with React+HTM - [see this article](https://markus.oberlehner.net/blog/building-partially-hydrated-progressively-enhanced-static-websites-with-isomorphic-preact-and-eleventy/#demo-and-full-code). Although it is not the most stars, it has some impressive users. |
 | [RedwoodJS](https://github.com/redwoodjs/redwood) | ★4.2k alpha | "Redwood is an opinionated, full-stack, serverless web application framework that will allow you to build and deploy JAMstack applications with ease. Imagine a React frontend, statically delivered by CDN, that talks via GraphQL to your backend running on AWS Lambdas around the world, all deployable with just a git push—that's Redwood." (By Github) |
 | [Unpoly](https://github.com/unpoly/unpoly) | ★613 | Not really a JAMStack. Unobtrusive JavaScript framework for server-side applications. It makes standard round-trip web sites look like SSR PWA. |
 

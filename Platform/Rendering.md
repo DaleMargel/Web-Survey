@@ -94,7 +94,7 @@ For my own projects, I plan on giving Heresy (or sibling) another try once I hav
 | Control Hierarchies | Structure controls to make development easier. |
 
 ## Where JS is Rendered?
-Javascript is flexible but HTM is efficient and is more easily read by web crawlers. How do we resolve the tension between the two?
+Javascript is flexible but HTML is efficient and is more easily read by web crawlers. How do we resolve the tension between the two?
 
 | Strategy | Description |
 | -------- | ----------- |
@@ -110,6 +110,7 @@ Javascript is flexible but HTM is efficient and is more easily read by web crawl
 
 Perhaps in some point the tool will be able to detect which parts of the screen are dynamic and render accordingly. For now, these tool require the developer to handle this manually.
 
+The only stack that I found supporting PH is [Nexo](../Server/Technology/Node.md#Deno)
 
 ## DOM Diffing
 
